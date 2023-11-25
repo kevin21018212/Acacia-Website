@@ -14,8 +14,8 @@ interface BoardMemberCardProps {
 
 const BoardMemberCard: React.FC<BoardMemberCardProps> = ({ member }) => {
   const descriptionVariants = {
-    hidden: { height: "20%" },
-    visible: { height: "50%" },
+    hidden: { height: "10%" },
+    visible: { height: "40%" },
   };
 
   const infoVariants = {

@@ -8,6 +8,7 @@
 .membersTitle {
   margin-bottom: 50px;
 }
+
 .membersTitle h1 {
   color: whitesmoke;
 }
@@ -19,9 +20,20 @@
   width: 100vw;
   padding: 2.5%;
 }
+
 .cardBox {
-  width: 28%;
-  height: 35vh;
+  width: 28vw;
+  height: 40vh;
   margin: 2%;
   margin-bottom: 2.5%;
+}
+
+@media (max-width: 768px) {
+  .cardBox {
+    width: 90vw;
+  }
+  .membersTitle h1 {
+    padding-left: 5%;
+    font-size: 6rem;
+  }
 }

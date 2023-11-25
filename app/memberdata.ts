@@ -29,12 +29,7 @@ const boardMembersData = [
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     image: "/images/buskecraig.jpeg", // Use full path from the root
   },
-  {
-    name: "Roger Kingrey",
-    position: "Member",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "/images/rogerkingrey.jpeg", // Use full path from the root
-  },
+
   {
     name: "Richard Taylor",
     position: "Director Emeritus",
