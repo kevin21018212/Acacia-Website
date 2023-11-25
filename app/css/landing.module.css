@@ -35,7 +35,7 @@
 .clickableBox {
   background: #003082;
   margin: 12px;
-  padding: 30px 50px;
+  padding: 4vh 6vw;
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;

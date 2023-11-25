@@ -3,14 +3,13 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 50vh;
-  padding: 5%;
+  height: 60vh;
   padding-top: 10%;
 }
 
 .about {
-  width: 40%;
-  padding-right: 5%;
+  width: 35%;
+  margin: 0% 5% 5% 5%;
   color: whitesmoke;
 }
 
@@ -26,7 +25,10 @@
 
 .downloadBoxes {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .box {
@@ -36,9 +38,10 @@
   text-align: center;
   background: #ffcc00;
   border-radius: 15px;
-  height: 15vh;
-  margin: 2.5%;
-  padding: 5%;
+  height: 8vh;
+  width: 8vw;
+  margin: 2%;
+  padding: 4%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s, transform 0.3s;
 }

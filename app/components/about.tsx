@@ -1,7 +1,9 @@
+// About.jsx
 import React, { useEffect } from "react";
 import styles from "../css/about.module.css";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import DownloadBox from "./downloadbox";
 
 const About = () => {
   const controls = useAnimation();
@@ -15,39 +17,35 @@ const About = () => {
     }
   }, [controls, inView]);
 
-  const titleVariants = {
-    hidden: { x: -100, opacity: 0 },
-    visible: { x: 0, opacity: 1, transition: { duration: 0.5, delay: 0.75 } },
-  };
-
-  const paragraphVariants = {
-    hidden: { x: -100, opacity: 0 },
-    visible: { x: 0, opacity: 1, transition: { duration: 0.5, delay: 0.9 } },
-  };
-  const boxVariants = {
-    hidden: { scale: 0.5, opacity: 0 },
-    visible: {
-      scale: 1,
-      opacity: 1,
-      transition: {
-        duration: 0.25,
-        delay: 0.25,
-        type: "spring",
-        stiffness: 50,
-      },
-    },
-    hover: { scale: 1.1, duration: 0, delay: 0 },
-  };
-
   const handleDownload = (file: string) => {
-    // Perform download logic here
-    console.log(`Downloading ${file}`);
+    const fileUrl = `documents/${file}`;
+
+    fetch(fileUrl)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`Failed to download ${file}`);
+        }
+        return response.blob();
+      })
+      .then((blob) => {
+        const link = document.createElement("a");
+        link.href = URL.createObjectURL(blob);
+        link.download = file;
+
+        document.body.appendChild(link);
+        link.click();
+
+        document.body.removeChild(link);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
 
   return (
     <motion.div
       className={styles.container}
-      variants={{ visible: {} }} // define a variant for the container
+      variants={{ visible: {} }}
       initial="hidden"
       animate={controls}
       ref={ref}
@@ -55,7 +53,14 @@ const About = () => {
       <div className={styles.about}>
         <motion.h4
           className={styles.heading}
-          variants={titleVariants}
+          variants={{
+            hidden: { x: -100, opacity: 0 },
+            visible: {
+              x: 0,
+              opacity: 1,
+              transition: { duration: 0.5, delay: 0.75 },
+            },
+          }}
           initial="hidden"
           animate="visible"
         >
@@ -63,7 +68,14 @@ const About = () => {
         </motion.h4>
         <motion.p
           className={styles.paragraph}
-          variants={paragraphVariants}
+          variants={{
+            hidden: { x: -100, opacity: 0 },
+            visible: {
+              x: 0,
+              opacity: 1,
+              transition: { duration: 0.5, delay: 0.9 },
+            },
+          }}
           initial="hidden"
           animate="visible"
         >
@@ -77,26 +89,30 @@ const About = () => {
       <div className={styles.downloads}>
         <h5 className={styles.downloadText}>Click here to download</h5>
         <motion.div className={styles.downloadBoxes}>
-          <motion.div
-            variants={boxVariants}
-            whileHover="hover"
-            initial="hidden"
-            animate="visible"
-            className={styles.box}
-            onClick={() => handleDownload("Financial_Reports.pdf")}
-          >
-            <p className={styles.heading}>Financial Reports to Alumni</p>
-          </motion.div>
-          <motion.div
-            variants={boxVariants}
-            whileHover="hover"
-            initial="hidden"
-            animate="visible"
-            className={styles.box}
-            onClick={() => handleDownload("Operating_Procedures.pdf")}
-          >
-            <p className={styles.heading}>ISACF Operating Procedures</p>
-          </motion.div>
+          <DownloadBox
+            title="Financial Reports to Alumni"
+            handleDownload={() => handleDownload("2022 Financial Reports.pdf")}
+          />
+          <DownloadBox
+            title="2022 Financial Statememnts"
+            handleDownload={() => handleDownload("2022 Financial Reports.pdf")}
+          />
+          <DownloadBox
+            title="1st Quarter 2023 Donations"
+            handleDownload={() => handleDownload("1stQuarter2023Donations.pdf")}
+          />
+          <DownloadBox
+            title="Scholarship Qualifications PDF"
+            handleDownload={() =>
+              handleDownload("ScholarShipQualifications.pdf")
+            }
+          />
+          <DownloadBox
+            title="2nd Quarter Report to Alumni"
+            handleDownload={() =>
+              handleDownload("2023 - 2nd Quarter Report to Alumni.pdf")
+            }
+          />
         </motion.div>
       </div>
     </motion.div>

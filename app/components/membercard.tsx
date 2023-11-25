@@ -8,6 +8,7 @@ interface BoardMemberCardProps {
     name: string;
     position: string;
     bio: string;
+    image: string;
   };
 }
 
@@ -22,8 +23,14 @@ const BoardMemberCard: React.FC<BoardMemberCardProps> = ({ member }) => {
     visible: { opacity: 1, height: "30%" },
   };
 
+  const imagePath = `${member.image}`;
+
+  const cardStyle = {
+    backgroundImage: `url(${imagePath})`,
+  };
+
   return (
-    <motion.div className={styles.card}>
+    <motion.div className={styles.card} style={cardStyle}>
       <motion.div
         className={styles.description}
         variants={descriptionVariants}
