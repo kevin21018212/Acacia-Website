@@ -1,0 +1,27 @@
+.membersContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.membersTitle {
+  margin-bottom: 50px;
+}
+.membersTitle h1 {
+  color: whitesmoke;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw;
+  padding: 2.5%;
+}
+.cardBox {
+  width: 28%;
+  height: 35vh;
+  margin: 2%;
+  margin-bottom: 2.5%;
+}
