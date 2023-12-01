@@ -4,6 +4,7 @@ import styles from "../css/about.module.css";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import DownloadBox from "./downloadbox";
+import Link from "next/link";
 
 const About = () => {
   const controls = useAnimation();
@@ -87,32 +88,23 @@ const About = () => {
         </motion.p>
       </div>
       <div className={styles.downloads}>
-        <h5 className={styles.downloadText}>Click here to download</h5>
+        <h4 className={styles.downloadText}>Click to Explore</h4>
         <motion.div className={styles.downloadBoxes}>
-          <DownloadBox
-            title="Financial Reports to Alumni"
-            handleDownload={() => handleDownload("2022 Financial Reports.pdf")}
-          />
-          <DownloadBox
-            title="2022 Financial Statememnts"
-            handleDownload={() => handleDownload("2022 Financial Reports.pdf")}
-          />
-          <DownloadBox
-            title="1st Quarter 2023 Donations"
-            handleDownload={() => handleDownload("1stQuarter2023Donations.pdf")}
-          />
-          <DownloadBox
-            title="Scholarship Qualifications PDF"
-            handleDownload={() =>
-              handleDownload("ScholarShipQualifications.pdf")
-            }
-          />
-          <DownloadBox
-            title="2nd Quarter Report to Alumni"
-            handleDownload={() =>
-              handleDownload("2023 - 2nd Quarter Report to Alumni.pdf")
-            }
-          />
+          <Link href="/about" className={styles.box}>
+            <p>About Us</p>
+          </Link>
+
+          <Link href="/scholarships" className={styles.box}>
+            <p>Scholarships</p>
+          </Link>
+
+          <Link href="/donors" className={styles.box}>
+            <p>Donors</p>
+          </Link>
+
+          <Link href="/financial-reports" className={styles.box}>
+            <p>Financial Reports</p>
+          </Link>
         </motion.div>
       </div>
     </motion.div>

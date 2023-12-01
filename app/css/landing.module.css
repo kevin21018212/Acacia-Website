@@ -1,34 +1,50 @@
+.headingContainer {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffcc00;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
 .gridContainer {
   display: flex;
   height: 100vh;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("/images/acaciahouse.jpeg");
   background-size: cover;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  justify-content: flex-end;
+  align-items: flex-end;
 }
-
-.contentContainer {
+.landingCard {
+  width: 25%;
+  height: 58%;
+  margin-bottom: -7.5%;
+  background: darkslategray;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.cardImage {
+  height: 85%;
+  background-image: url("../../public/images/ian.jpg");
+  background-size: cover;
+}
+.cardText {
+  height: 15%;
+  color: whitesmoke;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  padding: 2%;
-  height: 12.5%;
-  width: 40%;
-  background-color: #ffcc00;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.heading {
-  margin: 0;
-  width: 100%;
+  font-size: 2vw;
+  padding-left: 5%;
 }
 
 .buttonContainer {
+  width: 75%;
   display: flex;
   justify-content: flex-end;
   margin-top: auto;
-  width: 60%;
   padding: 1%;
 }
 
@@ -62,7 +78,7 @@
   }
   .contentContainer {
     width: 100vw;
-    height: 12vh;
+    height: 15vh;
     justify-self: flex-start;
   }
   .contentContainer h2 {

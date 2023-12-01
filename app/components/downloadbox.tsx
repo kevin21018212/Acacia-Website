@@ -37,4 +37,30 @@ const DownloadBox: React.FC<DownloadBoxProps> = ({ title, handleDownload }) => {
   );
 };
 
+{
+  /* <DownloadBox
+            title="Financial Reports to Alumni"
+            handleDownload={() => handleDownload("2022 Financial Reports.pdf")}
+          />
+          <DownloadBox
+            title="2022 Financial Statememnts"
+            handleDownload={() => handleDownload("2022 Financial Reports.pdf")}
+          />
+          <DownloadBox
+            title="1st Quarter 2023 Donations"
+            handleDownload={() => handleDownload("1stQuarter2023Donations.pdf")}
+          />
+          <DownloadBox
+            title="Scholarship Qualifications PDF"
+            handleDownload={() =>
+              handleDownload("ScholarShipQualifications.pdf")
+            }
+          />
+          <DownloadBox
+            title="2nd Quarter Report to Alumni"
+            handleDownload={() =>
+              handleDownload("2023 - 2nd Quarter Report to Alumni.pdf")
+            }
+          /> */
+}
 export default DownloadBox;

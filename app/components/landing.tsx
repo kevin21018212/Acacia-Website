@@ -14,36 +14,50 @@ const Landing = () => {
   };
 
   return (
-    <motion.div
-      className={styles.gridContainer}
-      initial="hidden"
-      animate="visible"
-    >
-      <motion.div className={styles.contentContainer} variants={itemVariants}>
-        <h2 className={styles.heading}>Iowa State Acacia </h2>
-        <h3 className={styles.heading}>Chapter Foundation</h3>
+    <>
+      <motion.div
+        className={styles.headingContainer}
+        initial="hidden"
+        animate="visible"
+        variants={itemVariants}
+      >
+        <h1 className={styles.heading}>Iowa State Acacia Chapter Foundation</h1>
       </motion.div>
-      <motion.div className={styles.buttonContainer} variants={buttonVariants}>
-        <motion.div
-          className={styles.clickableBox}
-          whileHover={{
-            scale: 1.05,
-            boxShadow: "0 6px 10px rgba(0, 0, 0, 0.4)",
-          }}
-        >
-          <p>Donate</p>
+      <motion.div
+        className={styles.gridContainer}
+        initial="hidden"
+        animate="visible"
+      >
+        <motion.div className={styles.landingCard}>
+          <div className={styles.cardImage}></div>
+          <div className={styles.cardText}>Ian Text</div>
         </motion.div>
+
         <motion.div
-          className={styles.clickableBox}
-          whileHover={{
-            scale: 1.05,
-            boxShadow: "0 6px 10px rgba(0, 0, 0, 0.4)",
-          }}
+          className={styles.buttonContainer}
+          variants={buttonVariants}
         >
-          <p>Contact</p>
+          <motion.div
+            className={styles.clickableBox}
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0 6px 10px rgba(0, 0, 0, 0.4)",
+            }}
+          >
+            <p>Donate</p>
+          </motion.div>
+          <motion.div
+            className={styles.clickableBox}
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0 6px 10px rgba(0, 0, 0, 0.4)",
+            }}
+          >
+            <p>Contact</p>
+          </motion.div>
         </motion.div>
       </motion.div>
-    </motion.div>
+    </>
   );
 };
 

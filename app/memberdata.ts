@@ -31,10 +31,10 @@ const boardMembersData = [
   },
 
   {
-    name: "Richard Taylor",
-    position: "Director Emeritus",
+    name: "Randy Elkin",
+    position: "Member",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "/images/dicktaylor.jpeg", // Use full path from the root
+    image: null, // Use full path from the root
   },
 ];
 
