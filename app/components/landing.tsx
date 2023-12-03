@@ -3,11 +3,6 @@ import { motion } from "framer-motion";
 import styles from "../css/landing.module.css";
 
 const Landing = () => {
-  const itemVariants = {
-    hidden: { opacity: 0, x: -50 },
-    visible: { opacity: 1, x: 0 },
-  };
-
   const buttonVariants = {
     hidden: { opacity: 0, x: 50 },
     visible: { opacity: 1, x: 0 },
@@ -20,14 +15,6 @@ const Landing = () => {
 
   return (
     <>
-      <motion.div
-        className={styles.headingContainer}
-        initial="hidden"
-        animate="visible"
-        variants={itemVariants}
-      >
-        <h1 className={styles.heading}>Iowa State Acacia Chapter Foundation</h1>
-      </motion.div>
       <motion.div className={styles.gridContainer}>
         <motion.div className={styles.landingcard}>
           <motion.div
