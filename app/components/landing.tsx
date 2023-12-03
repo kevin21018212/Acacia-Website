@@ -13,6 +13,11 @@ const Landing = () => {
     visible: { opacity: 1, x: 0 },
   };
 
+  const descriptionVariants = {
+    hidden: { height: "12.5%" },
+    visible: { height: "40%" },
+  };
+
   return (
     <>
       <motion.div
@@ -23,19 +28,25 @@ const Landing = () => {
       >
         <h1 className={styles.heading}>Iowa State Acacia Chapter Foundation</h1>
       </motion.div>
-      <motion.div
-        className={styles.gridContainer}
-        initial="hidden"
-        animate="visible"
-      >
-        <motion.div className={styles.landingCard}>
-          <div className={styles.cardImage}></div>
-          <div className={styles.cardText}>Ian Text</div>
+      <motion.div className={styles.gridContainer}>
+        <motion.div className={styles.landingcard}>
+          <motion.div
+            className={styles.description}
+            initial="hidden"
+            whileHover="visible"
+            variants={descriptionVariants}
+          >
+            <h5>Ian Louis</h5>
+            <p>Scholarship Winner</p>
+            <p className={styles.bio}>Description </p>
+          </motion.div>
         </motion.div>
 
         <motion.div
           className={styles.buttonContainer}
           variants={buttonVariants}
+          initial="hidden"
+          animate="visible"
         >
           <motion.div
             className={styles.clickableBox}
