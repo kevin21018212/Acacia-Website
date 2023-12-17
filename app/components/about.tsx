@@ -43,6 +43,11 @@ const About = () => {
       });
   };
 
+  const descriptionVariants = {
+    hidden: { height: "15%" },
+    visible: { height: "40%" },
+  };
+
   return (
     <motion.div
       className={styles.container}
@@ -87,24 +92,18 @@ const About = () => {
           educational purposes as allowed by the IRS.
         </motion.p>
       </div>
-      <div className={styles.downloads}>
-        <h4 className={styles.downloadText}>Click to Explore</h4>
-        <motion.div className={styles.downloadBoxes}>
-          <Link href="/about" className={styles.box}>
-            <p>About Us</p>
-          </Link>
-
-          <Link href="/scholarships" className={styles.box}>
-            <p>Scholarships</p>
-          </Link>
-
-          <Link href="/donors" className={styles.box}>
-            <p>Donors</p>
-          </Link>
-
-          <Link href="/financial-reports" className={styles.box}>
-            <p>Financial Reports</p>
-          </Link>
+      <div className={styles.cardContainer}>
+        <motion.div className={styles.card}>
+          <motion.div
+            className={styles.description}
+            initial="hidden"
+            whileHover="visible"
+            variants={descriptionVariants}
+          >
+            <h5>Ian Louis</h5>
+            <p>Scholarship Winner</p>
+            <p className={styles.bio}>Description </p>
+          </motion.div>
         </motion.div>
       </div>
     </motion.div>

@@ -8,47 +8,6 @@
   align-items: flex-end;
 }
 
-.landingcard {
-  width: 25%;
-  height: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-image: url("../../public/images/ian.jpg");
-  background-size: cover;
-  overflow: hidden;
-}
-
-.description {
-  width: 100%;
-  padding: 2.5%;
-  background: #ffcc00;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  padding-top: 2.5%;
-}
-.description h5 {
-  color: black;
-  margin: 0;
-  margin-bottom: 2px;
-}
-
-.description p {
-  margin: 0;
-  padding-left: 2%;
-  margin-bottom: 2.5%;
-  font-size: 1.5rem;
-}
-
-.bio {
-  padding-left: 5%;
-  font-size: 1rem;
-}
-
 .buttonContainer {
   width: 75%;
   display: flex;

@@ -5,6 +5,10 @@
   src: url("../public/Fonts/Univers-57-Condensed-Font\ 2.otf")
     format("truetype");
 }
+@font-face {
+  font-family: "Copperplate Heavy";
+  src: url("../public/Fonts/OPTICopperplate-Heavy.otf") format("truetype");
+}
 
 @font-face {
   font-family: "Univers 67 Condensed Bold";
@@ -22,9 +26,9 @@ body {
 }
 
 h1 {
-  font-size: 5.9rem;
+  font-size: 2.5rem;
   margin: 0;
-  font-family: "Univers 67 Condensed Bold", "Arial", "sans-serif";
+  font-family: "Copperplate Heavt", "Arial", "sans-serif";
 }
 
 h2 {
