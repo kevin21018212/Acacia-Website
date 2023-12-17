@@ -37,9 +37,9 @@ const BoardMemberCard: React.FC<BoardMemberCardProps> = ({ member }) => {
         initial="hidden"
         whileHover="visible"
       >
-        <h6 className={styles.name}>{member.name}</h6>
+        <h5 className={styles.name}>{member.name}</h5>
+        <h6>{member.position}</h6>
         <motion.div variants={infoVariants} className={styles.info}>
-          <p>{member.position}</p>
           <p className={styles.bio}>{member.bio}</p>
         </motion.div>
       </motion.div>

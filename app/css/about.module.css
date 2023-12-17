@@ -1,5 +1,8 @@
-.container {
-  width: 100%;
+/*About*/
+
+/* About Section */
+.aboutSection {
+  width: 90%;
   height: 60vh;
   display: flex;
   justify-content: center;
@@ -7,37 +10,44 @@
   margin-bottom: 10%;
 }
 
+/* About and Card Container */
 .about,
 .cardContainer {
   width: 40%;
 }
 
+/* About Styles */
 .about {
-  margin: 0 5% 0 0%;
   color: whitesmoke;
 }
 
+/* Card Container Styles */
 .cardContainer {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   padding-top: 5%;
+  margin-left: 5%;
 }
 
+/* Card Styles */
 .card {
-  width: 60%;
+  width: 80%;
   height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  border-radius: 15px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
   background: url("../../public//images/ian.jpg") center/cover;
   overflow: hidden;
 }
 
+/* Description Styles */
 .description {
   width: 100%;
-  padding: 2.5%;
+  padding: 4%;
+
   background: #ffcc00;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -47,6 +57,7 @@
   padding-top: 2.5%;
 }
 
+/* Description Content Styles */
 .description h5 {
   color: black;
   margin: 0;
@@ -60,13 +71,15 @@
   font-size: 1.5rem;
 }
 
+/* Bio Styles */
 .bio {
   padding-left: 5%;
   font-size: 1rem;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
-  .container {
+  .aboutSection {
     flex-direction: column;
   }
 

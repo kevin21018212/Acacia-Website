@@ -34,7 +34,7 @@ const BoardMembers = () => {
   return (
     <div className={styles.membersContainer} ref={ref}>
       <div className={styles.membersTitle}>
-        <h1>MEET OUR BOARD</h1>
+        <h2>MEET OUR BOARD</h2>
       </div>
       <div className={styles.cardContainer}>
         {boardMembersData.map((member, index) => (

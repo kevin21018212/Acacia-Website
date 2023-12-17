@@ -22,15 +22,14 @@ const About = () => {
 
   return (
     <motion.div
-      className={styles.container}
+      className={styles.aboutSection}
       variants={{ visible: {} }}
       initial="hidden"
       animate={controls}
       ref={ref}
     >
       <div className={styles.about}>
-        <motion.h4
-          className={styles.heading}
+        <motion.h3
           variants={{
             hidden: { x: -100, opacity: 0 },
             visible: {
@@ -43,7 +42,7 @@ const About = () => {
           animate="visible"
         >
           About
-        </motion.h4>
+        </motion.h3>
         <motion.p
           className={styles.paragraph}
           variants={{
@@ -72,7 +71,7 @@ const About = () => {
             whileHover="visible"
             variants={descriptionVariants}
           >
-            <h5>Ian Louis</h5>
+            <h4>Ian Louis</h4>
             <p>Scholarship Winner</p>
             <p className={styles.bio}>Description </p>
           </motion.div>

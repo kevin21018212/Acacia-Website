@@ -31,7 +31,7 @@ export default function Reports() {
   return (
     <div className={styles.reportsContainer}>
       <div className={styles.heading}>
-        <h1>Financial Reports</h1>
+        <h2>Financial Reports</h2>
       </div>
 
       <div className={styles.boxesContainer}>

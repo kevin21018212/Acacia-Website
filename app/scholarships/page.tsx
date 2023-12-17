@@ -6,42 +6,42 @@ export default function Scholarships() {
   return (
     <div className={styles.scholarshipsContainer}>
       <div className={styles.heading}>
-        <h1>Available Scholarships</h1>
+        <h2>Available Scholarships</h2>
       </div>
       <div className={styles.scholarshipBox}>
         <div className={styles.scholarship}>
           <div className={styles.info}>
-            <h3>Academic</h3>
+            <h5>Academic</h5>
           </div>
           <div className={styles.requirements}></div>
         </div>
         <div className={styles.scholarship}>
           <div className={styles.info}>
-            <h3>Continuing Education</h3>
+            <h5>Continuing Education</h5>
           </div>
           <div className={styles.requirements}></div>
         </div>
         <div className={styles.scholarship}>
           <div className={styles.info}>
-            <h3>Zarr</h3>
+            <h5>Zarr</h5>
           </div>
           <div className={styles.requirements}></div>
         </div>
         <div className={styles.scholarship}>
           <div className={styles.info}>
-            <h3>McComber</h3>
+            <h5>McComber</h5>
           </div>
           <div className={styles.requirements}></div>
         </div>
         <div className={styles.scholarship}>
           <div className={styles.info}>
-            <h3>Campbell</h3>
+            <h5>Campbell</h5>
           </div>
           <div className={styles.requirements}></div>
         </div>
         <div className={styles.scholarship}>
           <div className={styles.info}>
-            <h3>Baty</h3>
+            <h5>Baty</h5>
           </div>
           <div className={styles.requirements}></div>
         </div>

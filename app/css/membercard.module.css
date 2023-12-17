@@ -1,3 +1,4 @@
+/* Member Card */
 .card {
   width: 100%;
   height: 100%;
@@ -11,6 +12,7 @@
   background-position: center;
 }
 
+/* Description */
 .description {
   width: 100%;
   padding: 5%;
@@ -24,17 +26,17 @@
   flex-direction: column;
 }
 
-.description h6 {
-  color: black;
-  margin-top: 2.5px;
+/* Description Content */
+.description h5 {
+  margin-top: -10px;
+  margin-bottom: 5px;
 }
-
-.description p {
+.description h6 {
   margin: 0;
   padding-left: 2%;
   margin-bottom: 5px;
 }
-
+/* Bio */
 .bio {
   padding-left: 5%;
   font-size: 1rem;

@@ -1,3 +1,6 @@
+/*Board Members*/
+
+/* Members Container */
 .membersContainer {
   display: flex;
   flex-direction: column;
@@ -5,15 +8,12 @@
   width: 100%;
 }
 
+/* Members Title */
 .membersTitle {
   margin-bottom: 50px;
 }
 
-.membersTitle h1 {
-  font-size: 5vw;
-  color: whitesmoke;
-}
-
+/* Card Container */
 .cardContainer {
   display: flex;
   flex-wrap: wrap;
@@ -22,6 +22,7 @@
   padding: 2.5%;
 }
 
+/* Card Box */
 .cardBox {
   width: 28vw;
   height: 40vh;
@@ -29,10 +30,12 @@
   margin-bottom: 2.5%;
 }
 
+/* Responsive Design for Card Box */
 @media (max-width: 768px) {
   .cardBox {
     width: 90vw;
   }
+
   .membersTitle h1 {
     padding-left: 5%;
     font-size: 6rem;
