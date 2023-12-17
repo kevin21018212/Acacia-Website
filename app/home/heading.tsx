@@ -18,8 +18,8 @@ const Heading = () => {
         <h1 className={styles.heading}>Iowa State Acacia Chapter Foundation</h1>
       </div>
       <div className={styles.links}>
-        <Link href="/about" className={styles.box}>
-          <p>About Us</p>
+        <Link href="/" className={styles.box}>
+          <p>Home</p>
         </Link>
         <Link href="/scholarships" className={styles.box}>
           <p>Scholarships</p>
@@ -27,8 +27,8 @@ const Heading = () => {
         <Link href="/donors" className={styles.box}>
           <p>Donors</p>
         </Link>
-        <Link href="/financial-reports" className={styles.box}>
-          <p>Financial Reports</p>
+        <Link href="/reports" className={styles.box}>
+          <p>Reports</p>
         </Link>
       </div>
     </motion.div>

@@ -1,10 +1,7 @@
-// About.jsx
 import React, { useEffect } from "react";
-import styles from "../css/about.module.css";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import DownloadBox from "./downloadbox";
-import Link from "next/link";
+import styles from "../css/about.module.css";
 
 const About = () => {
   const controls = useAnimation();
@@ -17,31 +14,6 @@ const About = () => {
       controls.start("visible");
     }
   }, [controls, inView]);
-
-  const handleDownload = (file: string) => {
-    const fileUrl = `documents/${file}`;
-
-    fetch(fileUrl)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`Failed to download ${file}`);
-        }
-        return response.blob();
-      })
-      .then((blob) => {
-        const link = document.createElement("a");
-        link.href = URL.createObjectURL(blob);
-        link.download = file;
-
-        document.body.appendChild(link);
-        link.click();
-
-        document.body.removeChild(link);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  };
 
   const descriptionVariants = {
     hidden: { height: "15%" },

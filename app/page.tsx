@@ -1,7 +1,7 @@
 "use client";
-import About from "./components/about";
-import Landing from "./components/landing";
-import BoardMembers from "./components/boardmembers";
+import About from "./home/about";
+import Landing from "./home/landing";
+import BoardMembers from "./home/boardmembers";
 import styles from "./page.module.css";
 export default function Home() {
   return (
