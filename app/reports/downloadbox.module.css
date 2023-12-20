@@ -1,0 +1,24 @@
+.box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffeb00;
+  height: 100%;
+  width: 100%;
+  padding: 5% 2.5%;
+  border-radius: 15px;
+  transition: background-color 0.2s, transform 0.3s;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.title h3 {
+  font-size: 3.5vh;
+  text-wrap: wrap;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  background-color: #ffeb00;
+}
