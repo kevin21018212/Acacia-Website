@@ -15,20 +15,26 @@ const Heading = () => {
       variants={itemVariants}
     >
       <div className={styles.title}>
-        <h1 className={styles.heading}>Iowa State Acacia Chapter Foundation</h1>
+        <div className={styles.logo} />
+        <div className={styles.heading}>
+          <h1>Iowa State Acacia Chapter Foundation</h1>
+        </div>
       </div>
       <div className={styles.links}>
         <Link href="/" className={styles.box}>
           <p>Home</p>
+        </Link>
+        <Link href="/board" className={styles.box}>
+          <p>Board</p>
+        </Link>
+        <Link href="/reports" className={styles.box}>
+          <p>Reports</p>
         </Link>
         <Link href="/scholarships" className={styles.box}>
           <p>Scholarships</p>
         </Link>
         <Link href="/donors" className={styles.box}>
           <p>Donors</p>
-        </Link>
-        <Link href="/reports" className={styles.box}>
-          <p>Reports</p>
         </Link>
       </div>
     </motion.div>

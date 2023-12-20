@@ -1,5 +1,6 @@
+"use client";
 import React, { useEffect } from "react";
-import styles from "../css/boardmembers.module.css";
+import styles from "./page.module.css";
 import boardMembersData from "../memberdata";
 import BoardMemberCard from "./membercard";
 import { motion, useAnimation } from "framer-motion";
