@@ -11,7 +11,13 @@ const Reports: React.FC = () => {
       <div className={styles.boxesContainer}>
         <div className={styles.box}>
           <DownloadBox
-            title="Financial Reports to Alumni"
+            title="Scholarship Qualifications PDF"
+            file="ScholarshipQualifications.pdf"
+          />
+        </div>
+        <div className={styles.box}>
+          <DownloadBox
+            title="2022 Year-End Financial Report"
             file="2022 Financial Reports.pdf"
           />
         </div>
@@ -25,12 +31,6 @@ const Reports: React.FC = () => {
           <DownloadBox
             title="1st Quarter 2023 Donations"
             file="1stQuarter2023Donations.pdf"
-          />
-        </div>
-        <div className={styles.box}>
-          <DownloadBox
-            title="Scholarship Qualifications PDF"
-            file="ScholarshipQualifications.pdf"
           />
         </div>
         <div className={styles.box}>

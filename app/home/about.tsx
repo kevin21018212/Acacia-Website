@@ -16,7 +16,7 @@ const About = () => {
   }, [controls, inView]);
 
   const descriptionVariants = {
-    hidden: { height: "15%" },
+    hidden: { height: "14%" },
     visible: { height: "40%" },
   };
 

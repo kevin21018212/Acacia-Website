@@ -47,27 +47,26 @@
 .description {
   width: 100%;
   padding: 4%;
-
   background: #ffcc00;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  padding-top: 2.5%;
+  padding-top: 3%;
 }
 
 /* Description Content Styles */
 .description h5 {
   color: black;
   margin: 0;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 
 .description p {
   margin: 0;
   padding-left: 2%;
-  margin-bottom: 2.5%;
+  margin-bottom: 3%;
   font-size: 1.5rem;
 }
 
