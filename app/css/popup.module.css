@@ -17,7 +17,7 @@
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   max-width: 700px;
-  width: 100%;
+  width: 90%;
 }
 
 .popupContent p {
@@ -25,7 +25,8 @@
   font-size: 2vw;
 }
 .popupContent h4 {
-  color: white;
+  text-decoration: none;
+  text-align: center;
 }
 
 .popupContent a {
@@ -56,4 +57,23 @@
 .popupContent button:hover {
   background-color: #dbaf00;
   transform: scale(1.05);
+}
+
+@media only screen and (max-width: 600px) {
+  .popupContent p {
+    font-size: 1.8rem;
+    margin: 20px 0px;
+  }
+  .popupContent a {
+    color: #0056b3;
+    text-decoration: none;
+    display: block;
+    margin: 5% 0%;
+    font-size: 1.6rem;
+  }
+  .popupContent button {
+    font-size: 1.8rem;
+    width: 100%;
+    padding: 15px;
+  }
 }

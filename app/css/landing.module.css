@@ -44,3 +44,17 @@
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
+
+@media only screen and (max-width: 600px) {
+  .buttonContainer {
+    width: 100%;
+    justify-content: center;
+  }
+  .clickableBox {
+    padding: 3vh 8vw;
+  }
+  .clickableBox p {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+}
