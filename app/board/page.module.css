@@ -42,14 +42,16 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-/* Responsive Design for Card Box */
 @media (max-width: 768px) {
   .cardBox {
     width: 90vw;
   }
-
-  .membersTitle h1 {
-    padding-left: 5%;
-    font-size: 6rem;
+  .membersTitle {
+    width: 100vw;
+    text-align: center;
+    margin: 10% 0% 5% 0%;
+  }
+  .membersTitle h2 {
+    font-size: 4rem;
   }
 }

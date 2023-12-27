@@ -73,18 +73,23 @@
   font-size: 1rem;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .aboutSection {
+@media only screen and (max-width: 600px) {
+  .aboutContainer {
+    height: 110vh;
     flex-direction: column;
+    margin-bottom: 0;
   }
-
-  .about {
-    width: 90vw;
-    margin-bottom: 25%;
+  .about,
+  .cardContainer {
+    width: 90%;
+    justify-content: center;
+    margin: 0;
   }
-
-  .paragraph {
-    font-size: 1.3rem;
+  .description h3 {
+    color: #1b1212;
+    font-size: 2rem;
+  }
+  .card {
+    height: 50vh;
   }
 }
