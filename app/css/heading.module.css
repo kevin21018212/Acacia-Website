@@ -52,27 +52,38 @@
   padding: 1% 2.5%;
   transition: background-color 0.3s, transform 0.3s;
   text-decoration: none;
-  color: inherit;
+  color: #f9f6ee;
 }
 
 /* Box Paragraph Styles */
 .box p {
   font-size: 1.5vw;
   font-weight: 900;
-  color: white;
 }
 
 /* Box Hover Styles */
 .box:hover {
   background-color: #5c5050;
-  color: white;
+  color: #faf9f6;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45) inset;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .heading {
-    font-size: 2.8rem;
-    padding-left: 2.5%;
+@media only screen and (max-width: 600px) {
+  .logo {
+    display: none;
+  }
+  .title {
+    text-align: center;
+    height: 10vh;
+  }
+  .links {
+    justify-content: center;
+    height: 10vh;
+  }
+  .box {
+    width: 20vw;
+  }
+  .box p {
+    font-size: 1rem;
   }
 }

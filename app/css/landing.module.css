@@ -34,7 +34,6 @@
 
 /* Clickable Box Paragraph Styles */
 .clickableBox p {
-  color: white;
   margin: 0;
   font-size: 2rem;
 }
@@ -44,33 +43,4 @@
   background: linear-gradient(#005093, #005094);
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .gridContainer {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
-
-  .contentContainer {
-    width: 100vw;
-    height: 15vh;
-    justify-self: flex-start;
-  }
-
-  .contentContainer h2 {
-    font-size: 3rem;
-  }
-
-  .buttonContainer {
-    width: 100vw;
-    justify-self: flex-end;
-    justify-content: center;
-  }
-
-  .landingcard {
-    opacity: 0;
-  }
 }

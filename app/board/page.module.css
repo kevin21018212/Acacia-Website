@@ -25,12 +25,21 @@
   padding: 2.5%;
 }
 
+.cardContainer h6,
+.cardContainer h5 {
+  color: #1b1212;
+}
+.cardContainer p {
+  color: #28282b;
+}
+
 /* Card Box */
 .cardBox {
   width: 28vw;
   height: 40vh;
   margin: 2%;
   margin-bottom: 2.5%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 /* Responsive Design for Card Box */

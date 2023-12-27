@@ -19,7 +19,6 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 2.5% 0% 2.5% 0%;
-  color: white;
 }
 
 /* Scholarship Box */
@@ -39,7 +38,6 @@
 /* Scholarship Info and Requirements */
 .info {
   width: 60%;
-  color: white;
   margin-left: 2.5%;
 }
 
