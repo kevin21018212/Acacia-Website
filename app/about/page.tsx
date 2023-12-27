@@ -1,7 +1,8 @@
+"use client";
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import styles from "../css/about.module.css";
+import styles from "./page.module.css";
 
 const About = () => {
   const controls = useAnimation();
@@ -16,13 +17,13 @@ const About = () => {
   }, [controls, inView]);
 
   const descriptionVariants = {
-    hidden: { height: "14%" },
+    hidden: { height: "15%" },
     visible: { height: "40%" },
   };
 
   return (
     <motion.div
-      className={styles.aboutSection}
+      className={styles.aboutContainer}
       variants={{ visible: {} }}
       initial="hidden"
       animate={controls}
@@ -71,7 +72,7 @@ const About = () => {
             whileHover="visible"
             variants={descriptionVariants}
           >
-            <h4>Ian Louis</h4>
+            <h3>Ian Louis</h3>
             <p>Scholarship Winner</p>
             <p className={styles.bio}>Description </p>
           </motion.div>

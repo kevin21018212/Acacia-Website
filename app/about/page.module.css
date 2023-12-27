@@ -1,13 +1,13 @@
 /*About*/
 
 /* About Section */
-.aboutSection {
-  width: 90%;
-  height: 60vh;
+.aboutContainer {
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 10%;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
 }
 
 /* About and Card Container */

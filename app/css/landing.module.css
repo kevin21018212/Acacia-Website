@@ -3,7 +3,7 @@
 /* Grid Container */
 .gridContainer {
   display: flex;
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   background: url("/images/acaciahouse.jpg");
   background-size: cover;

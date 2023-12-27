@@ -7,6 +7,7 @@ const Reports: React.FC = () => {
     <div className={styles.reportsContainer}>
       <div className={styles.heading}>
         <h2>Financial Reports</h2>
+        <h4>Click the Boxes to Download</h4>
       </div>
       <div className={styles.boxesContainer}>
         <div className={styles.box}>

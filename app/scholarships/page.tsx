@@ -8,6 +8,7 @@ export default function Scholarships() {
     <div className={styles.scholarshipsContainer}>
       <div className={styles.heading}>
         <h2>Available Scholarships</h2>
+        <h4>Click the Boxes to Download</h4>
       </div>
 
       <div className={styles.scholarshipBox}>
@@ -48,10 +49,6 @@ export default function Scholarships() {
             <DownloadBox title="Continuing Education Application" file={""} />
           </div>
         </div>
-      </div>
-
-      <div className={styles.heading}>
-        <h2>Past Winners</h2>
       </div>
     </div>
   );

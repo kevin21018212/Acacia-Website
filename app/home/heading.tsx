@@ -24,17 +24,17 @@ const Heading = () => {
         <Link href="/" className={styles.box}>
           <p>Home</p>
         </Link>
+        <Link href="/about" className={styles.box}>
+          <p>About</p>
+        </Link>
+        <Link href="/scholarships" className={styles.box}>
+          <p>Scholarships</p>
+        </Link>
         <Link href="/board" className={styles.box}>
           <p>Board</p>
         </Link>
         <Link href="/reports" className={styles.box}>
           <p>Reports</p>
-        </Link>
-        <Link href="/scholarships" className={styles.box}>
-          <p>Scholarships</p>
-        </Link>
-        <Link href="/donors" className={styles.box}>
-          <p>Donors</p>
         </Link>
       </div>
     </motion.div>
