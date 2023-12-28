@@ -74,7 +74,10 @@ const About = () => {
           >
             <h3>Ian Louis</h3>
             <p>Scholarship Winner</p>
-            <p className={styles.bio}>Description </p>
+            <p className={styles.bio}>
+              The Denis G. McComber Scholarship helped assit me with paying with
+              the ever mounting cost of gaining a higher education
+            </p>
           </motion.div>
         </motion.div>
       </div>
