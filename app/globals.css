@@ -28,40 +28,40 @@ body {
 
 p {
   color: #f9f6ee;
-  font-size: 1.25rem;
+  font-size: 2.5vh;
   font-family: "Univers 57 Condensed", "Arial", "sans-serif";
 }
 h6 {
   color: #f9f6ee;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   font-family: "Univers 57 Condensed ", "Arial", "sans-serif";
   font-weight: 200;
   margin: 0;
 }
 h5 {
   color: #f9f6ee;
-  font-size: 1.8rem;
+  font-size: 3vw;
   font-family: "Univers 57 Condensed ", "Arial", "sans-serif";
   margin: 0;
 }
 h4 {
   color: #f9f6ee;
   text-decoration: underline;
-  font-size: 2.25rem;
+  font-size: 4vh;
   font-family: "Univers 57 Condensed ", "Arial", "sans-serif";
   margin: 0;
 }
 
 h3 {
   color: #1b1212;
-  font-size: 2.5rem;
+  font-size: 2.5vw;
   font-family: "Univers 57 Condensed Bold", "Arial", "sans-serif";
   margin: 0;
 }
 
 h2 {
   color: #faf9f6;
-  font-size: 5rem;
+  font-size: 9vh;
   font-family: "Univers 57 Condensed Bold", "Arial", "sans-serif";
   margin: 0;
   margin-bottom: 1%;
