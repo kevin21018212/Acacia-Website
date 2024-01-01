@@ -45,6 +45,7 @@
 @media (max-width: 768px) {
   .cardBox {
     width: 90vw;
+    margin-bottom: 5%;
   }
 
   .membersTitle {
