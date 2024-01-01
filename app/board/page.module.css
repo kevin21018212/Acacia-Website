@@ -31,6 +31,8 @@
 }
 .cardContainer p {
   color: #28282b;
+  font-size: 1.8vh;
+  margin: 0;
 }
 
 /* Card Box */

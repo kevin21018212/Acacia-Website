@@ -25,6 +25,9 @@
   justify-content: flex-start;
   flex-direction: column;
 }
+.info {
+  width: 85%;
+}
 
 /* Description Content */
 .description h5 {
