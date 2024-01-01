@@ -1,86 +1,20 @@
 "use client";
-import React, { useEffect } from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import React from "react";
+import { motion } from "framer-motion";
 import styles from "./page.module.css";
+import AboutCard from "./aboutcard";
+import AboutText from "./abouttext";
 
 const About = () => {
-  const controls = useAnimation();
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-  });
-
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
-  }, [controls, inView]);
-
-  const descriptionVariants = {
-    hidden: { height: "15%" },
-    visible: { height: "40%" },
-  };
-
   return (
     <motion.div
       className={styles.aboutContainer}
       variants={{ visible: {} }}
       initial="hidden"
-      animate={controls}
-      ref={ref}
+      animate="visible"
     >
-      <div className={styles.about}>
-        <motion.h3
-          variants={{
-            hidden: { x: -100, opacity: 0 },
-            visible: {
-              x: 0,
-              opacity: 1,
-              transition: { duration: 0.5, delay: 0.75 },
-            },
-          }}
-          initial="hidden"
-          animate="visible"
-        >
-          About
-        </motion.h3>
-        <motion.p
-          className={styles.paragraph}
-          variants={{
-            hidden: { x: -100, opacity: 0 },
-            visible: {
-              x: 0,
-              opacity: 1,
-              transition: { duration: 0.5, delay: 0.9 },
-            },
-          }}
-          initial="hidden"
-          animate="visible"
-        >
-          The Iowa State Acacia Chapter Foundation ("ISACF") is a non-profit
-          foundation with the mission to raise funds for the benefit of the
-          undergraduate members of the Iowa State chapter of Acacia Fraternity.
-          The ISACF provides scholarships and other financial support for
-          educational purposes as allowed by the IRS.
-        </motion.p>
-      </div>
-      <div className={styles.cardContainer}>
-        <motion.div className={styles.card}>
-          <motion.div
-            className={styles.description}
-            initial="hidden"
-            whileHover="visible"
-            variants={descriptionVariants}
-          >
-            <h3>Ian Louis</h3>
-            <p>Scholarship Winner</p>
-            <p className={styles.bio}>
-              The Denis G. McComber Scholarship helped assit me with paying with
-              the ever mounting cost of gaining a higher education
-            </p>
-          </motion.div>
-        </motion.div>
-      </div>
+      <AboutText />
+      <AboutCard />
     </motion.div>
   );
 };
