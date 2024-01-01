@@ -23,9 +23,9 @@ const ContactPopup = ({ onClose }: any) => {
     <div className={styles.popupContainer}>
       <div className={styles.popupContent}>
         <h4>Contact our board members for more information:</h4>
-        <a href="mailto:boardmember1@example.com">Board Member 1</a>
-        <a href="mailto:boardmember2@example.com">Board Member 2</a>
-        <a href="mailto:boardmember3@example.com">Board Member 3</a>
+        <a href="mailto:jimdavisestancia@gmail.com">Jim Davis</a>
+        <a href="mailto:tenxrings@gmail.com">Roger Kingery</a>
+        <a href="mailto:acacia_814@hotmail.com">Harold Zarr</a>
         <button onClick={onClose}>Close</button>
       </div>
     </div>
