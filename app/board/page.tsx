@@ -7,16 +7,19 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const BoardMembers = () => {
-  const controls = useAnimation();
+  const controlsArray = Array.from({ length: boardMembersData.length }, () =>
+    useAnimation()
+  );
+
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
 
   useEffect(() => {
     if (inView) {
-      controls.start("visible");
+      controlsArray.forEach((controls) => controls.start("visible"));
     }
-  }, [controls, inView]);
+  }, [controlsArray, inView]);
 
   const cardVariants = {
     hidden: { scale: 0.5, opacity: 0 },
@@ -25,7 +28,6 @@ const BoardMembers = () => {
       opacity: 1,
       transition: {
         duration: 0.25,
-        delay: 0.25,
         type: "spring",
         stiffness: 50,
       },
@@ -43,7 +45,7 @@ const BoardMembers = () => {
             key={index}
             variants={cardVariants}
             initial="hidden"
-            animate={controls}
+            animate={controlsArray[index]}
             className={styles.cardBox}
           >
             <BoardMemberCard member={member} />

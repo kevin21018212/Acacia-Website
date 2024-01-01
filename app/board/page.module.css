@@ -1,5 +1,3 @@
-/*Board Members*/
-
 /* Members Container */
 .membersContainer {
   display: flex;
@@ -21,17 +19,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100vw;
-  padding: 2.5%;
+  width: 95vw;
+  padding-bottom: 5%;
 }
 
 .cardContainer h6,
 .cardContainer h5 {
   color: #1b1212;
 }
+
 .cardContainer p {
   color: #28282b;
-  font-size: 1.8vh;
+  font-size: 1vw;
   margin: 0;
 }
 
@@ -39,8 +38,7 @@
 .cardBox {
   width: 28vw;
   height: 40vh;
-  margin: 2%;
-  margin-bottom: 2.5%;
+  margin: 1%;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
@@ -48,11 +46,13 @@
   .cardBox {
     width: 90vw;
   }
+
   .membersTitle {
     width: 100vw;
     text-align: center;
     margin: 10% 0% 5% 0%;
   }
+
   .membersTitle h2 {
     font-size: 4rem;
   }

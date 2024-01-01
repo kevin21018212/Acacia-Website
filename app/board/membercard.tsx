@@ -1,7 +1,7 @@
 // BoardMemberCard.jsx
 import React from "react";
 import { motion } from "framer-motion";
-import styles from "../css/membercard.module.css";
+import styles from "./membercard.module.css";
 
 interface BoardMemberCardProps {
   member: {

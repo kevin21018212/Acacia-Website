@@ -25,6 +25,7 @@
   justify-content: flex-start;
   flex-direction: column;
 }
+
 .info {
   width: 85%;
 }
@@ -34,11 +35,13 @@
   margin-top: -10px;
   margin-bottom: 5px;
 }
+
 .description h6 {
   margin: 0;
   padding-left: 2%;
   margin-bottom: 5px;
 }
+
 /* Bio */
 .bio {
   padding-left: 5%;
