@@ -12,6 +12,7 @@
 /*Heading*/
 .heading {
   height: 10vh;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

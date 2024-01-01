@@ -1,47 +1,89 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 import styles from "./page.module.css";
 import DownloadBox from "./downloadbox";
 
 const Reports: React.FC = () => {
+  const headingVariants = {
+    hidden: { scale: 0.5, opacity: 0 },
+    visible: {
+      scale: 1,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        type: "spring",
+        stiffness: 50,
+      },
+    },
+  };
+
+  const boxVariants = {
+    hidden: { scale: 0.5, opacity: 0 },
+    visible: {
+      scale: 1,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        type: "spring",
+        stiffness: 50,
+      },
+    },
+  };
+
   return (
-    <div className={styles.reportsContainer}>
-      <div className={styles.heading}>
+    <motion.div
+      className={styles.reportsContainer}
+      initial="hidden"
+      animate="visible"
+    >
+      <motion.div
+        className={styles.heading}
+        variants={headingVariants}
+        initial="hidden"
+        animate="visible"
+      >
         <h2>Financial Reports</h2>
         <h4>Click the Boxes to Download</h4>
-      </div>
-      <div className={styles.boxesContainer}>
-        <div className={styles.box}>
+      </motion.div>
+      <motion.div
+        className={styles.boxesContainer}
+        variants={boxVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        <motion.div className={styles.box}>
           <DownloadBox
             title="Scholarship Qualifications PDF"
             file="ScholarshipQualifications.pdf"
           />
-        </div>
-        <div className={styles.box}>
+        </motion.div>
+        <motion.div className={styles.box}>
           <DownloadBox
             title="2022 Year-End Financial Report"
             file="2022 Financial Reports.pdf"
           />
-        </div>
-        <div className={styles.box}>
+        </motion.div>
+        <motion.div className={styles.box}>
           <DownloadBox
             title="2022 Financial Statements"
             file="2022 Financial Statements.pdf"
           />
-        </div>
-        <div className={styles.box}>
+        </motion.div>
+        <motion.div className={styles.box}>
           <DownloadBox
             title="1st Quarter 2023 Donations"
             file="1stQuarter2023Donations.pdf"
           />
-        </div>
-        <div className={styles.box}>
+        </motion.div>
+        <motion.div className={styles.box}>
           <DownloadBox
             title="2nd Quarter Report to Alumni"
             file="2023 - 2nd Quarter Report to Alumni.pdf"
           />
-        </div>
-      </div>
-    </div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 };
 
