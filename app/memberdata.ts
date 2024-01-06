@@ -26,7 +26,7 @@ const boardMembersData = [
   {
     name: "Craig Buske",
     position: "Member",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    bio: "Acacia at Iowa State has been a positive influence in my life ever since I was initiated in 2003. I hope to be able to use my position on the board to ensure ISU Acacia can continue benefiting others",
     image: "/images/buskecraig.jpg",
   },
 
@@ -34,7 +34,7 @@ const boardMembersData = [
     name: "Randy Elkin",
     position: "Member",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: null, // Use full path from the root
+    image: "/images/randy.jpg",
   },
 ];
 

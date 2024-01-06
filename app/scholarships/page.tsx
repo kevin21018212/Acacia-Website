@@ -1,10 +1,12 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
-import DownloadBox from "../reports/downloadbox";
 import styles from "./page.module.css";
+import ContinuingEducationForm from "./conteduform";
 
 const Scholarships = () => {
+  const [popupType, setPopupType] = useState(null);
+
   const headingVariants = {
     hidden: { scale: 0.5, opacity: 0 },
     visible: {
@@ -44,6 +46,14 @@ const Scholarships = () => {
     },
   };
 
+  const handleButtonClick = (type: any) => {
+    setPopupType(type);
+  };
+
+  const handlePopupClose = () => {
+    setPopupType(null);
+  };
+
   return (
     <div className={styles.scholarshipsContainer}>
       <motion.div
@@ -81,10 +91,17 @@ const Scholarships = () => {
             initial="hidden"
             animate="visible"
           >
-            <DownloadBox
-              title="Denis G. McComber Scholarship Application"
-              file={""}
-            />
+            {" "}
+            <motion.div
+              className={styles.clickableBox}
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0 6px 10px rgba(0, 0, 0, 0.4)",
+              }}
+              onClick={() => handleButtonClick("mcComber")}
+            >
+              <p>Click to Apply</p>
+            </motion.div>
           </motion.div>
         </div>
         <div className={styles.scholarship}>
@@ -111,10 +128,22 @@ const Scholarships = () => {
             initial="hidden"
             animate="visible"
           >
-            <DownloadBox title="Continuing Education Application" file={""} />
+            <motion.div
+              className={styles.clickableBox}
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0 6px 10px rgba(0, 0, 0, 0.4)",
+              }}
+              onClick={() => handleButtonClick("edu")}
+            >
+              <p>Click to Apply</p>
+            </motion.div>
           </motion.div>
         </div>
       </div>
+      {popupType === "edu" && (
+        <ContinuingEducationForm onClose={handlePopupClose} />
+      )}
     </div>
   );
 };

@@ -1,0 +1,107 @@
+/* form.module.css */
+
+.popupContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popupContent {
+  padding: 2.5%;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  width: 90%;
+}
+
+.popupContent h4 {
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.popupContent form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.popupContent label {
+  display: block;
+  color: white;
+}
+
+.bigInput {
+  height: 10vh;
+}
+.popupContent input,
+.popupContent textarea {
+  width: 100%;
+  padding: 5px;
+  margin-top: 1%;
+  box-sizing: border-box;
+  caret-color: #f9f6ee;
+  border-radius: 5px;
+  background-color: #1b1212;
+  color: #f9f6ee;
+}
+
+.popupContent input {
+  margin-top: 2.5%;
+}
+
+.popupContent input:focus,
+.popupContent textarea:focus {
+  outline: 2px solid #003082;
+}
+
+/**Signature Headers*/
+
+.signatureBox {
+  display: flex;
+  align-items: center;
+  height: 4vh;
+  color: #f9f6ee;
+  font-size: 2.5vh;
+}
+
+.buttonBox {
+  margin-top: -2.5%;
+  margin-left: 2.5%;
+  width: 25%;
+  height: 40%;
+}
+
+.signatureUpload {
+  margin-top: -2%;
+}
+
+/*Submit and close */
+.BottomBox {
+  padding: 5% 0%;
+}
+
+.submit {
+  background-color: #ffcc00;
+  width: 25%;
+  color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
+  margin-right: 20px;
+}
+
+.submit button:hover {
+  background-color: #dbaf00;
+  transform: scale(1.05);
+}

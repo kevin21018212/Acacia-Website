@@ -17,6 +17,11 @@
   font-size: 3.5vh;
   text-wrap: wrap;
 }
+.title p {
+  font-size: 2vh;
+  text-wrap: wrap;
+  color: #1b1212;
+}
 
 .box:hover {
   transform: scale(1.05);

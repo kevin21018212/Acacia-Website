@@ -54,6 +54,30 @@
   justify-content: center;
   align-items: center;
 }
+/* Clickable Box Styles */
+.clickableBox {
+  background: #003082;
+  margin: 12px;
+  padding: 4vh 6vw;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Clickable Box Paragraph Styles */
+.clickableBox p {
+  margin: 0;
+  font-size: 2rem;
+  color: #faf9f6;
+}
+
+/* Clickable Box Hover Styles */
+.clickableBox:hover {
+  background: linear-gradient(#005093, #005094);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
 
 @media only screen and (max-width: 600px) {
   .scholarshipsContainer {
