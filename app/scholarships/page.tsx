@@ -2,7 +2,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import styles from "./page.module.css";
-import ContinuingEducationForm from "./conteduform";
+import ContinuingEducationForm from "./scholarshipform";
+import ScholarshipForm from "./scholarshipform";
 
 const Scholarships = () => {
   const [popupType, setPopupType] = useState(null);
@@ -142,7 +143,10 @@ const Scholarships = () => {
         </div>
       </div>
       {popupType === "edu" && (
-        <ContinuingEducationForm onClose={handlePopupClose} />
+        <ScholarshipForm onClose={handlePopupClose} scholarship={true} />
+      )}
+      {popupType === "mcComber" && (
+        <ScholarshipForm onClose={handlePopupClose} scholarship={false} />
       )}
     </div>
   );
