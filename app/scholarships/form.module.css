@@ -31,27 +31,51 @@
   margin-bottom: 20px;
 }
 
-/*Download Buttons*/
+/* Download Buttons */
 
 .download {
   width: 80%;
   height: 50%;
-  margin: 5% 14% 2.5% 10%;
+  margin: 5% 14% 0% 10%;
 }
 
-.popupContent button {
-  background-color: #0056b3;
+.application,
+.close {
   width: 80%;
-  color: #faf9f6;
-  border: none;
-  cursor: pointer;
+  margin-top: 3%;
+}
+
+.application button,
+.close button {
+  width: 100%;
   padding: 4% 2.5%;
+  margin-top: 3%;
   border-radius: 15px;
-  font-size: 3.5vh;
+  font-size: 2.5vw;
+  font-family: "Univers 57 Condensed Bold", "Arial", "sans-serif";
+  transition: background-color 0.2s, transform 0.3s;
+
+  border: none;
+}
+
+.application button {
+  background-color: #ffcc00;
+  color: #1b1212;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-.popupContent button:hover {
+.application button:hover {
+  transform: scale(1.05);
+  background-color: #ffeb00;
+}
+
+.close button {
+  background-color: #0056b3;
+  color: #faf9f6;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.close button:hover {
   background: linear-gradient(#005093, #005094);
   transform: scale(1.05);
 }
