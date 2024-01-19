@@ -1,27 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "./page.module.css";
+import { cardVariants, descriptionVariants } from "../animations";
 
 const AboutCard = () => {
-  const descriptionVariants = {
-    hidden: { height: "15%" },
-    visible: { height: "40%" },
-  };
-
-  const cardVariants = {
-    hidden: { scale: 0.5, opacity: 0 },
-    visible: {
-      scale: 1,
-      opacity: 1,
-      transition: {
-        duration: 0.25,
-        delay: 0.75,
-        type: "spring",
-        stiffness: 50,
-      },
-    },
-  };
-
   return (
     <motion.div className={styles.cardContainer} variants={cardVariants}>
       <motion.div className={styles.card}>

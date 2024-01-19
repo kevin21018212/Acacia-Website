@@ -1,17 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "./page.module.css";
+import { textVariants } from "../animations";
 
 const AboutText = () => {
-  const textVariants = {
-    hidden: { x: -100, opacity: 0 },
-    visible: {
-      x: 0,
-      opacity: 1,
-      transition: { duration: 0.5, delay: 0.75 },
-    },
-  };
-
   return (
     <div className={styles.about}>
       <motion.h3 variants={textVariants} initial="hidden" animate="visible">

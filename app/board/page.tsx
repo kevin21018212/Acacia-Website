@@ -5,6 +5,7 @@ import boardMembersData from "../memberdata";
 import BoardMemberCard from "./membercard";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { cardVariants } from "../animations";
 
 const BoardMembers = () => {
   const controlsArray = Array.from({ length: boardMembersData.length }, () =>
@@ -20,19 +21,6 @@ const BoardMembers = () => {
       controlsArray.forEach((controls) => controls.start("visible"));
     }
   }, [controlsArray, inView]);
-
-  const cardVariants = {
-    hidden: { scale: 0.5, opacity: 0 },
-    visible: {
-      scale: 1,
-      opacity: 1,
-      transition: {
-        duration: 0.25,
-        type: "spring",
-        stiffness: 50,
-      },
-    },
-  };
 
   return (
     <div className={styles.membersContainer} ref={ref}>

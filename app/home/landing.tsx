@@ -3,14 +3,10 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import styles from "../css/landing.module.css";
 import { ContactPopup, DonatePopup } from "./popup";
+import { buttonVariants } from "../animations";
 
 const Landing = () => {
   const [popupType, setPopupType] = useState(null);
-
-  const buttonVariants = {
-    hidden: { opacity: 0, x: 50 },
-    visible: { opacity: 1, x: 0 },
-  };
 
   const handleButtonClick = (type: any) => {
     setPopupType(type);

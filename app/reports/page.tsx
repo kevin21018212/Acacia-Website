@@ -3,34 +3,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import styles from "./page.module.css";
 import DownloadBox from "./downloadbox";
+import { boxVariants, headingVariants } from "../animations";
 
 const Reports: React.FC = () => {
-  const headingVariants = {
-    hidden: { scale: 0.5, opacity: 0 },
-    visible: {
-      scale: 1,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-        type: "spring",
-        stiffness: 50,
-      },
-    },
-  };
-
-  const boxVariants = {
-    hidden: { scale: 0.5, opacity: 0 },
-    visible: {
-      scale: 1,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-        type: "spring",
-        stiffness: 50,
-      },
-    },
-  };
-
   return (
     <motion.div
       className={styles.reportsContainer}

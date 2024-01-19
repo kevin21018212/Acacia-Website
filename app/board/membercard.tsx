@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "./membercard.module.css";
+import { descriptionVariants, infoVariants } from "../animations";
 
 interface BoardMemberCardProps {
   member: {
@@ -13,16 +14,6 @@ interface BoardMemberCardProps {
 }
 
 const BoardMemberCard: React.FC<BoardMemberCardProps> = ({ member }) => {
-  const descriptionVariants = {
-    hidden: { height: "10%" },
-    visible: { height: "40%" },
-  };
-
-  const infoVariants = {
-    hidden: { opacity: 0, height: "0%" },
-    visible: { opacity: 1, height: "30%" },
-  };
-
   const imagePath = `${member.image}`;
 
   const cardStyle = {

@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import styles from "./form.module.css";
 import DownloadBox from "../reports/downloadbox";
+import { buttonVariants } from "../animations";
 
 const ScholarshipForm = ({ onClose, scholarship }: any) => {
   // Determine the values based on the scholarship prop
@@ -23,19 +24,6 @@ const ScholarshipForm = ({ onClose, scholarship }: any) => {
       : "/continuing-education-application";
   };
 
-  const buttonVariants = {
-    hidden: { scale: 0.5, opacity: 0 },
-    visible: {
-      scale: 1,
-      opacity: 1,
-      transition: {
-        duration: 0.15,
-        delay: 0.25,
-        type: "spring",
-      },
-    },
-    hover: { scale: 1.1, duration: 0, delay: 0 },
-  };
   return (
     <motion.div
       className={styles.popupContainer}

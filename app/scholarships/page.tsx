@@ -3,47 +3,10 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import styles from "./page.module.css";
 import ScholarshipForm from "./form";
+import { boxVariants, headingVariants, textVariants } from "../animations";
 
 const Scholarships = () => {
   const [popupType, setPopupType] = useState(null);
-
-  const headingVariants = {
-    hidden: { y: -100, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-        delay: 0.5,
-      },
-    },
-  };
-
-  const textVariants = {
-    hidden: { x: -100, opacity: 0 },
-    visible: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.75,
-        delay: 0.75,
-      },
-    },
-  };
-
-  const boxVariants = {
-    hidden: { scale: 0.5, opacity: 0 },
-    visible: {
-      scale: 1,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-        delay: 1,
-        type: "spring",
-        stiffness: 50,
-      },
-    },
-  };
 
   const handleButtonClick = (type: any) => setPopupType(type);
 
