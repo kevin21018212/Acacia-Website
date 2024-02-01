@@ -11,7 +11,7 @@
 
 /* Members Title */
 .membersTitle {
-  margin: 50px 0px;
+  margin: 50px 0;
 }
 
 /* Card Container */
@@ -51,7 +51,7 @@
   .membersTitle {
     width: 100vw;
     text-align: center;
-    margin: 10% 0% 5% 0%;
+    margin: 10% 0 5%;
   }
 
   .membersTitle h2 {

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import styles from "../css/downloadbox.module.css";
+import styles from "./downloadbox.module.css";
 import { boxVariants } from "../animations";
 
 interface DownloadBoxProps {

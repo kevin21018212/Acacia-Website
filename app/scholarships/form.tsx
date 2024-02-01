@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import styles from "./form.module.css";
 import DownloadBox from "../reports/downloadbox";
-import { buttonVariants } from "../animations";
+import { buttonVariants, popinVariants } from "../animations";
 
 const ScholarshipForm = ({ onClose, scholarship }: any) => {
   // Determine the values based on the scholarship prop
@@ -32,10 +32,10 @@ const ScholarshipForm = ({ onClose, scholarship }: any) => {
       exit={{ opacity: 0 }}
     >
       <motion.div
-        className={styles.popupContent}
-        initial={{ scale: 0.5, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        exit={{ scale: 0.5, opacity: 0 }}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+        variants={popinVariants}
       >
         <h4>{formTitle}</h4>
 

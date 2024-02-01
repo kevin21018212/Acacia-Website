@@ -27,7 +27,9 @@
 }
 
 .info {
-  width: 85%;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 2.5%;
 }
 
 /* Description Content */
@@ -46,4 +48,15 @@
 .bio {
   padding-left: 5%;
   font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .info {
+    width: 95%;
+  }
+
+  .bio {
+    padding-left: 3%;
+  }
 }

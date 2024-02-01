@@ -6,11 +6,9 @@ import { cardVariants, descriptionVariants } from "../animations";
 const AboutCard = () => {
   return (
     <motion.div className={styles.cardContainer} variants={cardVariants}>
-      <motion.div className={styles.card}>
+      <motion.div initial="hidden" whileHover="visible" className={styles.card}>
         <motion.div
           className={styles.description}
-          initial="hidden"
-          whileHover="visible"
           variants={descriptionVariants}
         >
           <h3>Ian Louis</h3>

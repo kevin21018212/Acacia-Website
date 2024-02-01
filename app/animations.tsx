@@ -33,6 +33,20 @@ export const itemVariants = {
   hidden: { opacity: 0, x: -50 },
   visible: { opacity: 1, x: 0 },
 };
+export const popinVariants = {
+  hidden: { opacity: 0, scale: 0.8 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      type: "spring",
+      stiffness: 200,
+      damping: 25,
+      duration: 0.15,
+    },
+  },
+  exit: { opacity: 0, scale: 0.8 },
+};
 
 export const cardVariants = {
   hidden: { scale: 0.5, opacity: 0 },

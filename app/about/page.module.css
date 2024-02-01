@@ -25,29 +25,30 @@
 .about h3 {
   color: #faf9f6;
   font-size: 5vh;
+  margin-bottom: 0;
 }
 
 .about p {
   margin-top: 1%;
+  margin-bottom: 0;
 }
 
 /* Card Styles */
 .card {
   width: 90%;
-  height: 45vh;
+  height: 60vh;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   overflow: hidden;
   background: url("../../public//images/ian.jpg") center/cover;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 /* Description Styles */
 .description {
   width: 90%;
-
   background: #ffcc00;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -60,12 +61,11 @@
 /* Description Content Styles */
 .description h3 {
   color: #1b1212;
-  margin-bottom: 1%;
+  margin-bottom: 0.5%;
 }
 
 .description p {
   margin: 0;
-
   padding-left: 2%;
   margin-bottom: 3%;
   font-size: 1.25vw;
@@ -94,9 +94,9 @@
   }
 
   .description h3 {
-    color: #1b1212;
     font-size: 6vw;
   }
+
   .description p {
     font-size: 4vw;
   }

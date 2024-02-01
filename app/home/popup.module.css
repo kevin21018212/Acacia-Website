@@ -21,20 +21,21 @@
 }
 
 .popupContent p {
-  margin: 20px 0px;
-  font-size: 2vw;
+  margin: 20px 0;
+  font-size: 3vh;
 }
+
 .popupContent h4 {
-  text-decoration: none;
   text-align: center;
+  margin: 0;
 }
 
 .popupContent a {
   color: #dbc900;
   text-decoration: none;
   display: block;
-  margin: 2.5% 0%;
-  font-size: 2vw;
+  margin: 2.5% 0;
+  font-size: 2.5vh;
 }
 
 .popupContent a:hover {
@@ -44,14 +45,14 @@
 
 .popupContent button {
   background-color: #0056b3;
-  width: 30%;
+  width: 35%;
   color: #faf9f6;
   border: none;
-  padding: 25px;
+  padding: 4% 5%;
   cursor: pointer;
   border-radius: 5px;
-  margin: 4% 0% 0% 0%;
-  font-size: 1.5vw;
+  margin: 4% 0 0;
+  font-size: 2.5vh;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
 }
 
@@ -63,13 +64,12 @@
 @media only screen and (max-width: 600px) {
   .popupContent p {
     font-size: 1.8rem;
-    margin: 20px 0px;
   }
   .popupContent a {
     color: #0056b3;
     text-decoration: none;
     display: block;
-    margin: 5% 0%;
+    margin: 5% 0;
     font-size: 1.6rem;
   }
   .popupContent button {

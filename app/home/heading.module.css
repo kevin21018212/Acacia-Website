@@ -14,7 +14,7 @@
 
 /* Title Styles */
 .title {
-  height: 14vh;
+  height: 13vh;
   width: 100%;
   display: flex;
   background-color: #ffcc00;
@@ -25,7 +25,7 @@
   display: flex;
   align-items: center;
   justify-content: left;
-  text-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -41,9 +41,10 @@
 .links {
   display: flex;
   justify-content: flex-end;
-  height: 6vh;
+  align-items: center;
+  height: 7vh;
   background-color: #201c1c;
-  padding: 0% 5%;
+  padding: 0 5%;
 }
 
 /* Box Styles */
@@ -52,7 +53,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 1% 2.5%;
+  padding: 0% 2.5%;
   transition: background-color 0.3s, transform 0.3s;
   text-decoration: none;
   color: #f9f6ee;
@@ -60,7 +61,7 @@
 
 /* Box Paragraph Styles */
 .box p {
-  font-size: 2.5vh;
+  font-size: 2.25vh;
   font-weight: 900;
 }
 
