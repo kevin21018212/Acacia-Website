@@ -19,6 +19,7 @@
   display: flex;
   background-color: #ffcc00;
 }
+
 .heading {
   height: 100%;
   display: flex;
@@ -26,6 +27,7 @@
   justify-content: left;
   text-wrap: wrap;
 }
+
 .logo {
   width: 8%;
   margin: 0 2.5%;
@@ -41,6 +43,7 @@
   justify-content: flex-end;
   height: 6vh;
   background-color: #201c1c;
+  padding: 0% 5%;
 }
 
 /* Box Styles */
@@ -76,6 +79,9 @@
     text-align: left;
     padding-left: 2.5%;
     height: 10vh;
+  }
+  .heading {
+    padding-left: 2.5%;
   }
   .links {
     justify-content: center;

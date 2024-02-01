@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import styles from "../css/heading.module.css";
+import styles from "./heading.module.css";
 import Link from "next/link";
 import { itemVariants } from "../animations";
 const Heading = () => {

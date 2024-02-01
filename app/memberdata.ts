@@ -33,7 +33,7 @@ const boardMembersData = [
   {
     name: "Randy Elkin",
     position: "Member",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    bio: '"To seek the truth and knowing it shed the light unto others." became my life\'s mission immediately after I read it in the Pledge Manual. Although I am long retired from being a professor of economics and industrial relations, it guides me today. I joined the ISACF Board to help the new generation of ISU Acacians pursue their life goals.',
     image: "/images/randy.jpg",
   },
 ];

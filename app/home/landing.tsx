@@ -1,7 +1,7 @@
 // Landing.jsx
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import styles from "../css/landing.module.css";
+import styles from "./landing.module.css";
 import { ContactPopup, DonatePopup } from "./popup";
 import { buttonVariants } from "../animations";
 

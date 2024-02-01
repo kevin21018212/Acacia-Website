@@ -1,6 +1,6 @@
 // Popup.jsx
 import React from "react";
-import styles from "../css/popup.module.css";
+import styles from "./popup.module.css";
 
 const DonatePopup = ({ onClose }: any) => {
   return (

@@ -47,6 +47,7 @@
 /* Description Styles */
 .description {
   width: 90%;
+
   background: #ffcc00;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -59,12 +60,12 @@
 /* Description Content Styles */
 .description h3 {
   color: #1b1212;
-
   margin-bottom: 1%;
 }
 
 .description p {
   margin: 0;
+
   padding-left: 2%;
   margin-bottom: 3%;
   font-size: 1.25vw;
@@ -94,7 +95,10 @@
 
   .description h3 {
     color: #1b1212;
-    font-size: 2vw;
+    font-size: 6vw;
+  }
+  .description p {
+    font-size: 4vw;
   }
 
   .card {
