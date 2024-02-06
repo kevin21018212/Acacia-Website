@@ -2,8 +2,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "./page.module.css";
-import DownloadBox from "./downloadbox";
+
 import { boxVariants, headingVariants } from "../animations";
+import DownloadBox from "../globals/downloadbox";
 
 const Reports: React.FC = () => {
   return (

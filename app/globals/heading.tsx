@@ -32,6 +32,9 @@ const Heading = () => {
         <Link href="/reports" className={styles.box}>
           <p>Reports</p>
         </Link>
+        <Link href="/policies" className={styles.box}>
+          <p>Policies</p>
+        </Link>
       </div>
     </motion.div>
   );

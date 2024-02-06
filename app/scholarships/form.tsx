@@ -3,8 +3,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "./form.module.css";
-import DownloadBox from "../reports/downloadbox";
+
 import { buttonVariants, popinVariants } from "../animations";
+import DownloadBox from "../globals/downloadbox";
 
 const ScholarshipForm = ({ onClose, scholarship }: any) => {
   // Determine the values based on the scholarship prop
