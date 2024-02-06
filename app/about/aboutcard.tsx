@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import styles from "./page.module.css";
+import styles from "./about.module.css";
 import { cardVariants, descriptionVariants } from "../animations";
 
 const AboutCard = () => {

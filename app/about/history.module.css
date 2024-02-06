@@ -1,0 +1,48 @@
+/* History Container */
+.about {
+  width: 100%;
+  min-height: 50vh;
+  padding: 0 5%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Heading Styles */
+.heading {
+  width: 100%;
+}
+
+/* Paragraph Styles */
+.paragraph {
+  margin-top: 1%;
+  margin-bottom: 0;
+}
+
+/* Read More Container */
+.readMoreContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; /* Adjust as needed */
+}
+
+/* Read More and Read Less Styles */
+.readMore,
+.readLess {
+  cursor: pointer;
+  color: #007bff; /* Change color as desired */
+  font-weight: bold;
+  text-decoration: underline;
+  margin-right: 10px; /* Adjust spacing between buttons */
+}
+
+/* Read More Hover Effect */
+.readMore:hover {
+  color: #0056b3; /* Change hover color as desired */
+}
+
+/* Read Less Hover Effect */
+.readLess:hover {
+  color: #ff0000; /* Change hover color as desired */
+}

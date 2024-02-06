@@ -14,13 +14,13 @@ const boardMembersData = [
   {
     name: "Harold Zarr",
     position: "Secretary and Treasurer",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    bio: "Membership in Acacia enriched my life.  My years of service on the alumni board, the AFF and the ISACF is my attempt to repay this Fraternity for all that I received.  My hope is that the service I render today will help to enrich the lives of the men who become members now and, in the decades, to come",
     image: "/images/haroldzarr.jpg", // Use full path from the root
   },
   {
     name: "John Lynch",
     position: "Member",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    bio: "Creating a Foundation so that ISU Acacians can make tax deductible charitable contributions to benefit the Chapter is a great idea, so when asked, I joined the Board.  Now we all have a tax deductible method to give something back to the Chapter in return for what Acacia gave us.",
     image: "/images/johntynch.jpg",
   },
   {
