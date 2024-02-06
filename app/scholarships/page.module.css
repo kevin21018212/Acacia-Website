@@ -49,7 +49,7 @@
 .requirements {
   width: 30%;
   padding: 2.5% 5%;
-  margin: 2.5% 0% 2.5% 0%;
+  margin: 0% 0% 2.5% 0%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +57,7 @@
 /* Clickable Box Styles */
 .clickableBox {
   background: #003082;
-  margin: 12px;
+  margin: 0 12px;
   padding: 4vh 6vw;
   border-radius: 8px;
   cursor: pointer;

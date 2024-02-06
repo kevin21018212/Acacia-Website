@@ -11,10 +11,6 @@
   justify-content: center;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
 }
-.historyContainer h1 {
-  color: #faf9f6;
-  font-size: 7vw;
-}
 
 /* Responsive Styles */
 @media only screen and (max-width: 600px) {

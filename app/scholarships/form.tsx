@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import styles from "./form.module.css";
 
-import { buttonVariants, popinVariants } from "../animations";
+import { boxVariants, buttonVariants, popinVariants } from "../animations";
 import DownloadBox from "../globals/downloadbox";
 
 const ScholarshipForm = ({ onClose, scholarship }: any) => {
@@ -14,7 +14,7 @@ const ScholarshipForm = ({ onClose, scholarship }: any) => {
     : "Denis G. McComber Scholarship Application Form";
   const downloadTitle = scholarship
     ? "Download Scholarship Application"
-    : "Denis G. McComber Scholarship Application";
+    : "Download Denis G. McComber Scholarship Application";
   const downloadFile = scholarship
     ? "ISACF Continuing Education Scholarship Application.docx"
     : "McComber Scholarship Application.docx";
@@ -37,33 +37,25 @@ const ScholarshipForm = ({ onClose, scholarship }: any) => {
         animate="visible"
         exit="exit"
         variants={popinVariants}
+        className={styles.popupContent}
       >
         <h4>{formTitle}</h4>
-
         <motion.div className={styles.download}>
           <DownloadBox title={downloadTitle} file={downloadFile} />
         </motion.div>
         <div className={styles.application}>
           <motion.button
-            variants={buttonVariants}
+            variants={boxVariants}
             whileHover="hover"
             initial="hidden"
             animate="visible"
             onClick={handleApplyOnline}
           >
-            Apply Online
+            <h3>Apply Online</h3>
           </motion.button>
         </div>
         <div className={styles.close}>
-          <motion.button
-            variants={buttonVariants}
-            whileHover="hover"
-            initial="hidden"
-            animate="visible"
-            onClick={onClose}
-          >
-            Close
-          </motion.button>
+          <motion.button onClick={onClose}>Close</motion.button>
         </div>
       </motion.div>
     </motion.div>

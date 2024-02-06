@@ -23,10 +23,10 @@ export const boxVariants = {
     transition: {
       duration: 0.15,
       delay: 0.25,
-      type: "spring",
+      type: "intertia",
     },
   },
-  hover: { scale: 1.1, duration: 0, delay: 0 },
+  hover: { scale: 1, duration: 0, delay: 0 },
 };
 
 export const itemVariants = {

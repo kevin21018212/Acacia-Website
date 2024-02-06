@@ -28,21 +28,21 @@ const DonatePopup = ({ onClose }: any) => {
 
 const ContactPopup = ({ onClose }: any) => {
   return (
-    <motion.div
-      initial="hidden"
-      animate="visible"
-      exit="exit"
-      variants={popinVariants}
-      className={styles.popupContainer}
-    >
-      <div className={styles.popupContent}>
+    <div className={styles.popupContainer}>
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+        variants={popinVariants}
+        className={styles.popupContent}
+      >
         <h4>Contact our board members for more information:</h4>
         <a href="mailto:jimdavisestancia@gmail.com">Jim Davis</a>
         <a href="mailto:tenxrings@gmail.com">Roger Kingery</a>
         <a href="mailto:acacia_814@hotmail.com">Harold Zarr</a>
         <button onClick={onClose}>Close</button>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 };
 

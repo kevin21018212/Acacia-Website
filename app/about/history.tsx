@@ -18,7 +18,7 @@ const History = () => {
         </motion.h1>
       </div>
 
-      <motion.p
+      <motion.div
         className={styles.paragraph}
         variants={textVariants}
         initial="hidden"
@@ -116,36 +116,33 @@ const History = () => {
                 Foundation!
               </p>
               <br />
+              <span className={styles.readLess} onClick={toggleReadMore}>
+                View Less
+              </span>
             </div>
           </>
         ) : (
-          <>
-            The idea for the creation of the Iowa State Acacia Chapter
-            Foundation arose from a series of discussions between Brothers Jim
-            Davis #489 and Harold Zarr #814 in 2019. The process of constructing
-            the new chapter house was well underway and they believed that there
-            was a clear need for an organization specifically designed to
-            support the chapter on a long-term basis. The alumni support
-            provided for the construction of the chapter house was magnificent,
-            but they were concerned that without an organization whose mission
-            was clearly focused on the long-term future of the Iowa State
-            Chapter of Acacia, momentum might be lost and alumni support might
-            be lost or taken up by other organizations.
-          </>
+          <div>
+            <p>
+              The idea for the creation of the Iowa State Acacia Chapter
+              Foundation arose from a series of discussions between Brothers Jim
+              Davis #489 and Harold Zarr #814 in 2019. The process of
+              constructing the new chapter house was well underway and they
+              believed that there was a clear need for an organization
+              specifically designed to support the chapter on a long-term basis.
+              The alumni support provided for the construction of the chapter
+              house was magnificent, but they were concerned that without an
+              organization whose mission was clearly focused on the long-term
+              future of the Iowa State Chapter of Acacia, momentum might be lost
+              and alumni support might be lost or taken up by other
+              organizations.
+            </p>
+            <span className={styles.readMore} onClick={toggleReadMore}>
+              View More
+            </span>
+          </div>
         )}
-      </motion.p>
-
-      <div className={styles.readMoreContainer}>
-        {isExpanded ? (
-          <span className={styles.readLess} onClick={toggleReadMore}>
-            Read Less
-          </span>
-        ) : (
-          <span className={styles.readMore} onClick={toggleReadMore}>
-            View More
-          </span>
-        )}
-      </div>
+      </motion.div>
     </div>
   );
 };
