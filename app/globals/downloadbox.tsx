@@ -42,7 +42,7 @@ const DownloadBox = ({ title, file }: DownloadBoxProps) => {
       onClick={handleDownload}
     >
       <div className={styles.title}>
-        <h3>{title}</h3>
+        <h6>{title}</h6>
       </div>
     </motion.div>
   );

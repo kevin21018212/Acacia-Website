@@ -66,11 +66,6 @@ export const descriptionVariants = {
   visible: { height: "45%" },
 };
 
-export const infoVariants = {
-  hidden: { opacity: 0, height: "0%" },
-  visible: { opacity: 1, height: "30%" },
-};
-
 export const textVariants = {
   hidden: { x: -100, opacity: 0 },
   visible: {

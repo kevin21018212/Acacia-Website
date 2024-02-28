@@ -2,7 +2,6 @@
 .about {
   width: 50%;
 }
-
 .cardContainer {
   width: 35%;
   display: flex;
@@ -65,7 +64,6 @@
 /* Bio Styles */
 .bio {
   padding-left: 5%;
-  font-size: 1.5vw;
 }
 
 /* Responsive Styles */
@@ -74,15 +72,10 @@
   .cardContainer {
     width: 90%;
     justify-content: center;
-    margin: 0;
+    margin: 5% 0;
   }
-
-  .description h3 {
-    font-size: 6vw;
-  }
-
   .description p {
-    font-size: 4vw;
+    margin-bottom: 5%;
   }
 
   .card {

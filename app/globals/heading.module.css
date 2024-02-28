@@ -89,9 +89,10 @@
     height: 10vh;
   }
   .box {
+    height: 100%;
     width: 20vw;
   }
   .box p {
-    font-size: 1rem;
+    font-size: 3.5vw;
   }
 }

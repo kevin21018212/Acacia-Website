@@ -25,16 +25,15 @@
   flex-wrap: wrap;
 }
 
-.popupContent h4 {
-  text-decoration: none;
+.popupContent h5 {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 5% 10%;
 }
 
 /* Download Buttons */
 
 .download {
-  width: 70%;
+  width: 66%;
   height: 50%;
   margin: 5% 14% 0% 10%;
 }
@@ -45,20 +44,20 @@
   margin-top: 3%;
 }
 
-.application h3 {
-  font-size: 3.5vh;
-}
-
 .application button,
 .close button {
   width: 100%;
-  padding: 4% 2.5%;
-  margin-top: 3%;
+  padding: 5% 2.5%;
+  margin-top: 2.5%;
   border-radius: 15px;
   font-size: 2.5vw;
   font-family: "Univers 57 Condensed Bold", "Arial", "sans-serif";
   transition: background-color 0.2s, transform 0.3s;
   border: none;
+}
+
+.application h6 {
+  color: #1b1212;
 }
 
 .application button {
@@ -81,4 +80,14 @@
 .close button:hover {
   background: linear-gradient(#005093, #005094);
   transform: scale(1.05);
+}
+
+@media only screen and (max-width: 600px) {
+  .application button,
+  .close button {
+    font-size: 5vw;
+  }
+  .close button {
+    margin: 5% 0%;
+  }
 }

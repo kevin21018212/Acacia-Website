@@ -8,20 +8,17 @@
   flex-wrap: wrap;
 }
 
-.about h1 {
-  color: #faf9f6;
-  font-size: 7vw;
-  margin: 0;
-  padding: 0;
-}
-.about p {
-  margin-top: 0;
-}
 /* Heading Styles */
 .heading {
   width: 100%;
   height: 20vh;
   margin: 0;
+}
+.heading h1 {
+  color: #faf9f6;
+  font-size: 7vw;
+  margin: 0;
+  padding: 0;
 }
 
 /* Paragraph Styles */
@@ -47,4 +44,21 @@
 .readMore:hover,
 .readLess:hover {
   color: #ffad00;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+  .heading {
+    height: 10vh;
+  }
+  .heading h1 {
+    font-size: 12.5vw;
+  }
+  .paragraph {
+    width: 95%;
+  }
+  .readMore,
+  .readLess {
+    font-size: 4vw;
+  }
 }

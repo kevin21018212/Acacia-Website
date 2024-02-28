@@ -15,7 +15,7 @@
 /* Responsive Styles */
 @media only screen and (max-width: 600px) {
   .aboutContainer {
-    height: 110vh;
+    height: 90vh;
     flex-direction: column;
     margin-bottom: 0;
   }

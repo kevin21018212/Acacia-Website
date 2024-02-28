@@ -13,22 +13,11 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-.title h3 {
-  font-size: 3.25vh;
-  text-wrap: wrap;
-}
-.title p {
-  font-size: 2vh;
+.title h6 {
   text-wrap: wrap;
   color: #1b1212;
 }
 
 .box:hover {
   background-color: #ffeb00;
-}
-
-@media only screen and (max-width: 600px) {
-  .title h3 {
-    font-size: 1.5rem;
-  }
 }

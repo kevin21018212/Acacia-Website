@@ -14,8 +14,8 @@ const DonatePopup = ({ onClose }: any) => {
         variants={popinVariants}
         className={styles.popupContent}
       >
-        <h4>Thank you for considering a donation!</h4>
-        <p>Please choose a method to donate:</p>
+        <h5>Thank you for considering a donation!</h5>
+        <h6>Please choose a method to donate:</h6>
         <a href="/pledge-agreement-form">Pledge Agreement Form</a>
         <a href="/paypal">PayPal</a>
         <a href="/google-pay">Google Pay</a>
@@ -36,7 +36,7 @@ const ContactPopup = ({ onClose }: any) => {
         variants={popinVariants}
         className={styles.popupContent}
       >
-        <h4>Contact our board members for more information:</h4>
+        <h5>Contact our board members for more information:</h5>
         <a href="mailto:jimdavisestancia@gmail.com">Jim Davis</a>
         <a href="mailto:tenxrings@gmail.com">Roger Kingery</a>
         <a href="mailto:acacia_814@hotmail.com">Harold Zarr</a>

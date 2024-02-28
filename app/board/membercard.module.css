@@ -28,35 +28,43 @@
 
 .info {
   width: 90%;
-  max-width: 600px;
+
   margin: 0 2.5%;
 }
 
 /* Description Content */
 .description h6 {
   margin-top: -10px;
-  margin-bottom: 5px;
+  color: #1b1212;
 }
 
-.description p {
-  margin: 0;
+.description h5 {
+  font-size: 1.5vw;
+
   padding-left: 2%;
   color: #28282b;
 }
 
 /* Bio */
 .bio {
-  padding: 2.5% 5%;
-  font-size: 1rem;
+  color: #1b1212;
+  font-size: 1vw;
+  margin-top: 2.5%;
 }
 
 /* Responsive Styles */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .info {
-    width: 95%;
+    width: 90%;
+  }
+  .description h6 {
+    font-size: 8.25vw;
+  }
+  .description h5 {
+    font-size: 4.5vw;
   }
 
   .bio {
-    padding-left: 3%;
+    font-size: 4vw;
   }
 }

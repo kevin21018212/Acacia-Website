@@ -35,7 +35,6 @@ h6 {
   color: #f9f6ee;
   font-size: 2vw;
   font-family: "Univers 57 Condensed ", "Arial", "sans-serif";
-
   margin: 0;
 }
 h5 {
@@ -54,7 +53,7 @@ h4 {
 
 h3 {
   color: #1b1212;
-  font-size: vw;
+  font-size: 3.5vw;
   font-family: "Univers 57 Condensed Bold", "Arial", "sans-serif";
   margin: 0;
 }
@@ -77,24 +76,24 @@ h1 {
 
 @media only screen and (max-width: 600px) {
   h1 {
-    font-size: 1.25rem;
+    font-size: 5.5vw;
   }
   h2 {
-    font-size: 3.25rem;
+    font-size: 12.5vw;
   }
   h3 {
-    font-size: 3.5rem;
+    font-size: 9.5vw;
   }
   h4 {
-    font-size: 2.5rem;
+    font-size: 8vw;
   }
   h5 {
-    font-size: 1.8rem;
+    font-size: 5.5vw;
   }
   h6 {
-    font-size: 1rem;
+    font-size: 5vw;
   }
   p {
-    font-size: 1.5rem;
+    font-size: 4vw;
   }
 }

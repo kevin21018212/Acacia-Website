@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "./membercard.module.css";
-import { descriptionVariants, infoVariants } from "../animations";
+import { descriptionVariants } from "../animations";
 
 interface BoardMemberCardProps {
   member: {
@@ -29,8 +29,8 @@ const BoardMemberCard: React.FC<BoardMemberCardProps> = ({ member }) => {
         whileHover="visible"
       >
         <h6>{member.name}</h6>
-        <p>{member.position}</p>
-        <motion.div variants={infoVariants} className={styles.info}>
+        <h5>{member.position}</h5>
+        <motion.div className={styles.info}>
           <p className={styles.bio}>{member.bio}</p>
         </motion.div>
       </motion.div>

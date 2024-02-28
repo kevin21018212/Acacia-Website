@@ -39,7 +39,7 @@ const ScholarshipForm = ({ onClose, scholarship }: any) => {
         variants={popinVariants}
         className={styles.popupContent}
       >
-        <h4>{formTitle}</h4>
+        <h5>{formTitle}</h5>
         <motion.div className={styles.download}>
           <DownloadBox title={downloadTitle} file={downloadFile} />
         </motion.div>
@@ -51,7 +51,7 @@ const ScholarshipForm = ({ onClose, scholarship }: any) => {
             animate="visible"
             onClick={handleApplyOnline}
           >
-            <h3>Apply Online</h3>
+            <h6>Apply Online</h6>
           </motion.button>
         </div>
         <div className={styles.close}>
