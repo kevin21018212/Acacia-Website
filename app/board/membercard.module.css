@@ -33,20 +33,20 @@
 }
 
 /* Description Content */
-.description h5 {
+.description h6 {
   margin-top: -10px;
   margin-bottom: 5px;
 }
 
-.description h6 {
+.description p {
   margin: 0;
   padding-left: 2%;
-  margin-bottom: 5px;
+  color: #28282b;
 }
 
 /* Bio */
 .bio {
-  padding-left: 5%;
+  padding: 2.5% 5%;
   font-size: 1rem;
 }
 

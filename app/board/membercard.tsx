@@ -28,8 +28,8 @@ const BoardMemberCard: React.FC<BoardMemberCardProps> = ({ member }) => {
         initial="hidden"
         whileHover="visible"
       >
-        <h5 className={styles.name}>{member.name}</h5>
-        <h6>{member.position}</h6>
+        <h6>{member.name}</h6>
+        <p>{member.position}</p>
         <motion.div variants={infoVariants} className={styles.info}>
           <p className={styles.bio}>{member.bio}</p>
         </motion.div>

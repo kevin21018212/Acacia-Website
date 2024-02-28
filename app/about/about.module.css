@@ -50,23 +50,22 @@
 }
 
 /* Description Content Styles */
-.description h3 {
+.description h4 {
   color: #1b1212;
-  margin-bottom: 0.5%;
+  text-decoration: none;
 }
 
 .description p {
   margin: 0;
   padding-left: 2%;
   margin-bottom: 3%;
-  font-size: 1.75vw;
   color: #28282b;
 }
 
 /* Bio Styles */
 .bio {
   padding-left: 5%;
-  font-size: 1rem;
+  font-size: 1.5vw;
 }
 
 /* Responsive Styles */

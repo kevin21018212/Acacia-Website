@@ -31,7 +31,7 @@ const Reports: React.FC = () => {
         <motion.div className={styles.box}>
           <DownloadBox
             title="Scholarship Qualifications PDF"
-            file="ScholarshipQualifications.pdf"
+            file="Scholarship Policy.pdf"
           />
         </motion.div>
         <motion.div className={styles.box}>
@@ -40,12 +40,7 @@ const Reports: React.FC = () => {
             file="2022 Financial Reports.pdf"
           />
         </motion.div>
-        <motion.div className={styles.box}>
-          <DownloadBox
-            title="2022 Financial Statements"
-            file="2022 Financial Statements.pdf"
-          />
-        </motion.div>
+
         <motion.div className={styles.box}>
           <DownloadBox
             title="1st Quarter 2023 Donations"

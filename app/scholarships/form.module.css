@@ -34,14 +34,14 @@
 /* Download Buttons */
 
 .download {
-  width: 80%;
+  width: 70%;
   height: 50%;
   margin: 5% 14% 0% 10%;
 }
 
 .application,
 .close {
-  width: 80%;
+  width: 70%;
   margin-top: 3%;
 }
 

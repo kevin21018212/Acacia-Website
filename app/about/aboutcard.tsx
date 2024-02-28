@@ -11,7 +11,7 @@ const AboutCard = () => {
           className={styles.description}
           variants={descriptionVariants}
         >
-          <h3>Ian Louis</h3>
+          <h4>Ian Louis</h4>
           <p>Scholarship Winner</p>
           <p className={styles.bio}>
             The Denis G. McComber Scholarship helped assist me with paying the

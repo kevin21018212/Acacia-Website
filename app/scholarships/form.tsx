@@ -16,8 +16,8 @@ const ScholarshipForm = ({ onClose, scholarship }: any) => {
     ? "Download Scholarship Application"
     : "Download Denis G. McComber Scholarship Application";
   const downloadFile = scholarship
-    ? "ISACF Continuing Education Scholarship Application.docx"
-    : "McComber Scholarship Application.docx";
+    ? "ISACF Scholarship App.docx"
+    : "McComber Scholarship App 2023.docx";
 
   const handleApplyOnline = () => {
     window.location.href = scholarship

@@ -2,7 +2,7 @@
 .about {
   width: 100%;
   min-height: 55vh;
-  padding: 5%;
+  padding: 0% 5%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -29,21 +29,22 @@
   margin: 0;
   width: 100%;
   min-height: 35vh;
+  margin-bottom: 5%;
 }
 
 /* Read More and Read Less Styles */
 .readMore,
 .readLess {
   cursor: pointer;
-  color: #007bff;
+  color: #ffcc00;
   font-weight: bold;
   text-decoration: underline;
-  margin-right: 10px;
-  font-size: 1.25vw;
+  font-size: 1.75vw;
+  margin: 0;
 }
 
 /* Read More Hover Effect */
 .readMore:hover,
 .readLess:hover {
-  color: #0056b3;
+  color: #ffad00;
 }
