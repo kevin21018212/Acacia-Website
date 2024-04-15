@@ -1,9 +1,9 @@
 /* About and Card Container */
 .about {
-  width: 50%;
+  width: 45%;
 }
 .cardContainer {
-  width: 35%;
+  width: 40%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -26,7 +26,7 @@
 /* Card Styles */
 .card {
   width: 90%;
-  height: 60vh;
+  height: 55vh;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -67,7 +67,8 @@
 }
 
 /* Responsive Styles */
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 950px) {
   .about,
   .cardContainer {
     width: 90%;
@@ -80,5 +81,22 @@
 
   .card {
     height: 50vh;
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .about,
+  .cardContainer {
+    width: 90%;
+    justify-content: center;
+    margin: 0%;
+  }
+  .description p {
+    margin-bottom: 5%;
+  }
+
+  .card {
+    height: 42.5vh;
+    width: 90%;
   }
 }

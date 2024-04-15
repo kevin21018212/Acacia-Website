@@ -45,6 +45,7 @@
   height: 7vh;
   background-color: #201c1c;
   padding: 0;
+  overflow: hidden;
 }
 
 /* Box Styles */
@@ -69,6 +70,7 @@
 .box:hover {
   background-color: #5c5050;
   color: #faf9f6;
+  padding: 0% 2.5%;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45) inset;
 }
 

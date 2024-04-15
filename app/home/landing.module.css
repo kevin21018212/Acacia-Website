@@ -24,8 +24,8 @@
 /* Clickable Box Styles */
 .clickableBox {
   background: #003082;
-  margin: 12px;
-  padding: 4vh 6vw;
+  margin: 10px;
+  padding: 3vh 3vw;
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;

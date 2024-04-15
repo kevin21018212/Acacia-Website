@@ -80,15 +80,15 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 950px) {
   .scholarshipsContainer {
-    height: 140vh;
+    height: 170vh;
   }
 
   .heading {
-    height: 20vh;
+    height: 25vh;
     text-align: center;
-    margin: 10% 0%;
+    margin: 5vh 0% 10vh 0%;
   }
   .heading h4 {
     margin-top: 2.5%;
@@ -97,8 +97,7 @@
   .scholarship {
     flex-direction: column;
     align-items: center;
-    height: 50vh;
-    margin: 10% 0%;
+    height: 65vh;
   }
 
   .info {
@@ -110,11 +109,23 @@
   }
   .requirements {
     width: 100vw;
-    margin: 5% 0%;
+    margin: 2vh 0%;
     padding: 0;
   }
 
   .clickableBox p {
     font-size: 5vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .scholarshipsContainer {
+    height: 140vh;
+  }
+  .heading {
+    margin: 5vh 0%;
+  }
+
+  .scholarship {
+    height: 55vh;
   }
 }

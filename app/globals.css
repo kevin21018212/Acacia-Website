@@ -74,9 +74,33 @@ h1 {
   word-spacing: 2.5;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 950px) {
   h1 {
+    font-size: 5vw;
+  }
+  h2 {
+    font-size: 12.5vw;
+  }
+  h3 {
+    font-size: 8vw;
+  }
+  h4 {
+    font-size: 4vh;
+  }
+  h5 {
     font-size: 5.5vw;
+  }
+  h6 {
+    font-size: 5vw;
+  }
+  p {
+    font-size: 4vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.5vh;
   }
   h2 {
     font-size: 12.5vw;
@@ -85,7 +109,7 @@ h1 {
     font-size: 9.5vw;
   }
   h4 {
-    font-size: 8vw;
+    font-size: 7vw;
   }
   h5 {
     font-size: 5.5vw;
