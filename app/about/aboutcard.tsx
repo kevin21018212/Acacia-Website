@@ -13,10 +13,12 @@ const AboutCard = () => {
         >
           <h4>Ian Louis</h4>
           <p>Scholarship Winner</p>
-          <p className={styles.bio}>
-            The Denis G. McComber Scholarship helped assist me with paying the
-            ever-mounting cost of gaining a higher education
-          </p>
+          <div className={styles.bio}>
+            <p>
+              The Denis G. McComber Scholarship helped assist me with paying the
+              ever-mounting cost of gaining a higher education
+            </p>
+          </div>
         </motion.div>
       </motion.div>
     </motion.div>

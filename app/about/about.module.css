@@ -73,10 +73,18 @@
   .cardContainer {
     width: 90%;
     justify-content: center;
-    margin: 5% 0;
+    margin-bottom: 2.5vh;
+  }
+  .description h4 {
+    font-size: 5.5vw;
+    margin-left: 2.5%;
   }
   .description p {
-    margin-bottom: 5%;
+    font-size: 4vw;
+    margin-left: 5%;
+  }
+  .bio p {
+    font-size: 3.5vw;
   }
 
   .card {
@@ -85,18 +93,26 @@
   }
 }
 @media only screen and (max-width: 600px) {
-  .about,
+  .about {
+    width: 85%;
+  }
+
   .cardContainer {
-    width: 90%;
-    justify-content: center;
-    margin: 0%;
+    width: 85%;
+  }
+
+  .description h4 {
+    font-size: 7.5vw;
   }
   .description p {
-    margin-bottom: 5%;
+    font-size: 5vw;
+  }
+  .bio p {
+    font-size: 4vw;
   }
 
   .card {
-    height: 42.5vh;
+    height: 85vw;
     width: 90%;
   }
 }

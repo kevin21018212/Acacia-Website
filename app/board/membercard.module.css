@@ -34,7 +34,6 @@
 
 /* Description Content */
 .description h6 {
-  margin-top: -10px;
   color: #1b1212;
 }
 
@@ -53,17 +52,28 @@
 }
 
 /* Responsive Styles */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 950px) {
   .info {
-    width: 90%;
+    width: 85%;
   }
   .description h6 {
-    font-size: 8.25vw;
+    font-size: 5.5vw;
+  }
+  .description h5 {
+    font-size: 4.25vw;
+  }
+  .bio {
+    font-size: 2.5vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .description h6 {
+    font-size: 7vw;
   }
   .description h5 {
     font-size: 4.5vw;
   }
-
   .bio {
     font-size: 4vw;
   }
