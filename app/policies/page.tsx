@@ -19,7 +19,7 @@ const Policies: React.FC = () => {
         initial="hidden"
         animate="visible"
       >
-        <h2>Scholarship Policys</h2>
+        <h2>Scholarship Policies</h2>
         <h4>Click the Boxes to Download</h4>
       </motion.div>
       <motion.div
