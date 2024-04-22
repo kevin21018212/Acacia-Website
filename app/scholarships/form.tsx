@@ -21,8 +21,8 @@ const ScholarshipForm = ({ onClose, scholarship }: any) => {
 
   const handleApplyOnline = () => {
     window.location.href = scholarship
-      ? "/scholarship-application"
-      : "/continuing-education-application";
+      ? "https://docs.google.com/forms/d/1eIlqvpt3jwQ4MB1hbJ47iP2xUl1mCirIeznc-yfq6VY/edit?usp=sharing_eil_m&ts=6618062e"
+      : "https://docs.google.com/forms/d/1hVQLV4e-BfiHjw6QAx1_2lkyg4bdz708mExUgYCCzMU/edit?usp=sharing_eil_m&ts=66180921";
   };
 
   return (

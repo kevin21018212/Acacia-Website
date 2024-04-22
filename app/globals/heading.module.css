@@ -14,9 +14,10 @@
 
 /* Title Styles */
 .title {
-  height: 13vh;
+  height: 15vh;
   width: 100%;
   display: flex;
+  align-items: center;
   background-color: #ffcc00;
 }
 
@@ -29,8 +30,10 @@
 }
 
 .logo {
-  width: 8%;
-  margin: 0 2.5%;
+  width: 5%;
+  height: 80%;
+  margin: 0% 2.5%;
+  padding: 1%;
   background-image: url("../../public/images/logo.png");
   background-position: left;
   background-repeat: no-repeat;

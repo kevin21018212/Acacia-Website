@@ -62,7 +62,7 @@ export const cardVariants = {
 };
 
 export const descriptionVariants = {
-  hidden: { height: "14%" },
+  hidden: { height: "12.5%" },
   visible: { height: "45%" },
 };
 
