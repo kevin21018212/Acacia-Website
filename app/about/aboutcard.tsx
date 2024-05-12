@@ -3,21 +3,29 @@ import { motion } from "framer-motion";
 import styles from "./about.module.css";
 import { cardVariants, descriptionVariants } from "../animations";
 
-const AboutCard = () => {
+const AboutCard = ({ name, description, imageURL }: any) => {
+  // Function to return background style
+
+  const cardStyle = {
+    backgroundImage: `url(${imageURL})`,
+  };
+
   return (
     <motion.div className={styles.cardContainer} variants={cardVariants}>
-      <motion.div initial="hidden" whileHover="visible" className={styles.card}>
+      <motion.div
+        initial="hidden"
+        whileHover="visible"
+        className={styles.card}
+        style={cardStyle}
+      >
         <motion.div
           className={styles.description}
           variants={descriptionVariants}
         >
-          <h4>Ian Louis</h4>
+          <h4>{name}</h4>
           <p>Scholarship Winner</p>
           <div className={styles.bio}>
-            <p>
-              The Denis G. McComber Scholarship helped assist me with paying the
-              ever-mounting cost of gaining a higher education
-            </p>
+            <p>{description}</p>
           </div>
         </motion.div>
       </motion.div>

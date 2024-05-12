@@ -1,11 +1,19 @@
 /* About Section */
 .aboutContainer {
-  height: 80vh;
+  height: 30vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
+.cardContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  padding-bottom: 5%;
 }
+
 .historyContainer {
   display: flex;
   justify-content: center;
@@ -15,13 +23,12 @@
 /* Responsive Styles */
 @media only screen and (max-width: 950px) {
   .aboutContainer {
-    height: 100vh;
+    height: 40vh;
     flex-direction: column;
-    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
   }
-}
-@media only screen and (max-width: 600px) {
-  .aboutContainer {
+  .cardContainer {
     height: auto;
     flex-direction: column;
     justify-content: flex-start;
