@@ -17,9 +17,10 @@ const DonatePopup = ({ onClose }: any) => {
         <h5>Thank you for considering a donation!</h5>
         <h6>Please choose a method to donate:</h6>
         <a href="/pledge-agreement-form">Pledge Agreement Form</a>
-        <a href="/paypal">PayPal</a>
-        <a href="/google-pay">Google Pay</a>
-        <a href="/apple-pay">Apple Pay</a>
+        <a href="https://www.zeffy.com/donation-form/b5062069-b10b-4a26-9e7a-dabc0f73283d">
+          Zeffy
+        </a>
+
         <button onClick={onClose}>Close</button>
       </motion.div>
     </div>
