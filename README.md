@@ -53,30 +53,10 @@ This guide will help you update the reports, policies, and winners for the websi
 2.  Click the pencil icon (**Edit file**) to make changes.
 
 3.  Add or update winner entries in the following format:
-
-        json
-
-        Copy code
-
-        `[
-
-    {
-    "name": "Ian Louis",
-    "description": "The Denis G. McComber Scholarship helped assist me with paying the ever-mounting cost of gaining a higher education",
-    "imageURL": "/images/ian.jpg"
-    },
-    {
-    "name": "Bryce Aufrecht",
-    "description": "I would like to thank the board for this scholarship. This will really help me out with paying for college and my future career path",
-    "imageURL": "/images/bryce.jpg"
-    }
-    ]`
-
-        - **`name`**: Winner's name.
-        - **`description`**: Short message from the winner.
-        - **`imageURL`**: The path to the winner's image in the `/public/images` folder.
+    ![Winners](./public/md/winners.png)
 
 4.  Scroll down and click **Commit changes** to save the updates.
+    ![Winners Commit](./public/md/winnerscommit.png)
 
 ### How to Add/Delete Images in the Images Folder
 
