@@ -14,7 +14,9 @@ This guide will help you update the reports, policies, and winners for the websi
 ### 1.2 Folder to Add/Remove Files
 
 - Reports are located in the `public/documents/reports` folder.
+  ![Reports Folder](./public/md/bryce.jpg)
 - Policies are located in the `public/documents/policies` folder.
+  ![Policies Folder](./public/md/policies.png)
 
 ### How to Add/Remove Files in GitHub
 
@@ -23,14 +25,20 @@ This guide will help you update the reports, policies, and winners for the websi
     - For reports: `public/documents/reports`.
     - For policies: `public/documents/policies`.
 3.  **To add a file**:
+
     - Click the **`Add file`** button.
     - Select **Upload files**.
+      ![Upload file](./public/md/add.png)
     - Drag and drop the file you want to add or click **Choose your files** to select the file from your computer.
     - Scroll down and click **Commit changes** to save the file.
+      ![Commit File](./public/md/commit.png)
+
 4.  **To remove a file**:
     - Navigate to the file you want to remove.
     - Click on the file name to open it.
-    - Click the **Trash bin icon** or select **Delete this file**.
+    - Click the **Trash bin icon** or select
+      **Delete this file**.
+      ![Delete File](./public/remove.png)
     - Scroll down and click **Commit changes** to confirm the deletion.
 
 ---
@@ -45,26 +53,27 @@ This guide will help you update the reports, policies, and winners for the websi
 
 3.  Add or update winner entries in the following format:
 
-    json
+        json
 
-    Copy code
+        Copy code
 
-    `[
-  {
+        `[
+
+    {
     "name": "Ian Louis",
     "description": "The Denis G. McComber Scholarship helped assist me with paying the ever-mounting cost of gaining a higher education",
     "imageURL": "/images/ian.jpg"
-  },
-  {
+    },
+    {
     "name": "Bryce Aufrecht",
     "description": "I would like to thank the board for this scholarship. This will really help me out with paying for college and my future career path",
     "imageURL": "/images/bryce.jpg"
-  }
-]`
+    }
+    ]`
 
-    - **`name`**: Winner's name.
-    - **`description`**: Short message from the winner.
-    - **`imageURL`**: The path to the winner's image in the `/public/images` folder.
+        - **`name`**: Winner's name.
+        - **`description`**: Short message from the winner.
+        - **`imageURL`**: The path to the winner's image in the `/public/images` folder.
 
 4.  Scroll down and click **Commit changes** to save the updates.
 
