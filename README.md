@@ -38,8 +38,9 @@ This guide will help you update the reports, policies, and winners for the websi
     - Click on the file name to open it.
     - Click the **Trash bin icon** or select
       **Delete this file**.
-      ![Delete File](./public/remove.png)
+      ![Delete File](./public/md/remove.png)
     - Scroll down and click **Commit changes** to confirm the deletion.
+      ![Commit Delete File](./public/md/rmcommit.png)
 
 ---
 
