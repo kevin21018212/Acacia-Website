@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Ian Louis",
+    "description": "The Denis G. McComber Scholarship helped assist me with paying the ever-mounting cost of gaining a higher education",
+    "imageURL": "/images/ian.jpg"
+  },
+  {
+    "name": "Bryce Aufrecht",
+    "description": "I would like to thank the board for this scholarship. This will really help me out with paying for college and my future career path",
+    "imageURL": "/images/bryce.jpg"
+  },
+  {
+    "name": "Matthew Bennett",
+    "description": "The Denis G. McComber Scholarship has been a pivotal support in my studies, letting me focus on achieving my academic goals",
+    "imageURL": "/images/matthew.jpg"
+  }
+]
