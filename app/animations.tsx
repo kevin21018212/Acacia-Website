@@ -26,7 +26,7 @@ export const boxVariants = {
       type: "intertia",
     },
   },
-  hover: { scale: 1, duration: 0, delay: 0 },
+  hover: { scale: 1.1, duration: 0.5, delay: 0 },
 };
 
 export const itemVariants = {

@@ -24,7 +24,7 @@ const Reports: React.FC = () => {
       <motion.div className={styles.boxesContainer} variants={boxVariants} initial="hidden" animate="visible">
         {files.map(({ title, file }) => (
           <motion.div className={styles.box} key={file}>
-            <DownloadBox title={title} file={file} />
+            <DownloadBox title={title} file={`reports/${file}`} />
           </motion.div>
         ))}
       </motion.div>
